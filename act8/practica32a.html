@@ -1,0 +1,36 @@
+<!-- Practica 32a -->
+<!-- Juan Carlos Camarena Pillado -->
+<!-- Objetivo de la Practica: Crear un formulario que solicite el ingreso de Nombre, Especialidad, Grupo y Edad de una persona con un botón para enviar el dato al servidor -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Datos Personales</title>
+</head>
+<body>
+  <p>Juan Carlos Camarena Pillado</p>
+  <h2>Registro de Datos de Alumno</h2>
+  <form action="registrardatos.php" method="post">
+    <p>
+      Nombre:<br>
+      <input type="text" name="nombre" size="30" required>
+    </p>
+    <p>
+      Especialidad:<br>
+      <input type="text" name="especialidad" size="30" value="Programaci&oacute;n">
+    </p>
+    <p>
+      Grupo:<br>
+      <input type="text" name="grupo" size="10" placeholder="Ej. 5-A">
+    </p>
+    <p>
+      Edad:<br>
+      <input type="number" name="edad" min="1" max="99" style="width: 80px;">
+    </p>
+    <p>
+      <input type="submit" value="Enviar datos">
+      <input type="reset" value="Restablecer">
+    </p>
+  </form>
+</body>
+</html>
