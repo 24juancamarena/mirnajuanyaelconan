@@ -1,0 +1,91 @@
+<!-- Actividad Final: Página Web Responsiva (Página Persona) -->
+<!-- Juan Carlos Camarena Pillado -->
+<!-- Objetivo de la Página: Presentar a mis amigos y lo que valoro en una amistad -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport: evita que el celular "miniaturice" la página -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis amigos | Juan Carlos Camarena Pillado</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <p class="autor">Juan Carlos Camarena Pillado &middot; CBTis 224 &middot; 5.º semestre de Programación</p>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <a class="logo" href="index.html" title="Ir al inicio"></a>
+      <div>
+        <h1>Juan Carlos Camarena Pillado</h1>
+        <p class="lema">Estudiante de Programación &middot; CBTis No. 224, Culiacán, Sinaloa</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú de navegación: botones grandes en celular, barra horizontal en pantallas grandes -->
+  <nav class="menu">
+    <ul id="menupc">
+      <li><a href="index.html"><span class="titulo">Inicio</span><span class="subtitulos">Quién soy</span></a></li>
+      <li><a href="plantel.html"><span class="titulo">Mi plantel</span><span class="subtitulos">Dónde estudio</span></a></li>
+      <li><a href="actividades.html"><span class="titulo">Mis actividades</span><span class="subtitulos">Juegos y diversión</span></a></li>
+      <li><a href="amigos.html" class="activo" aria-current="page"><span class="titulo">Mis amigos</span><span class="subtitulos">Con quién convivo</span></a></li>
+      <li><a href="grupo.html"><span class="titulo">Mi grupo</span><span class="subtitulos">5.º de Programación</span></a></li>
+      <li><a href="familia.html"><span class="titulo">Mi familia</span><span class="subtitulos">Mi gente</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="contenedor">
+    <section class="presentacion">
+      <h2>Mis amigos</h2>
+      <p>Los amigos hacen que la escuela sea más divertida y que los problemas se vean más pequeños. Con ellos comparto tareas, juegos y muchas risas.</p>
+    </section>
+
+    <section>
+      <h2>Con quién convivo</h2>
+      <div class="rejilla">
+        <!-- Editar: agrega el nombre y una descripción de cada amigo -->
+        <article class="tarjeta">
+          <div class="avatar">MA</div>
+          <h3>Mi mejor amigo</h3>
+          <p>Siempre está cuando lo necesito. Con él comparto juegos, tareas y pláticas largas.</p>
+        </article>
+        <article class="tarjeta verde">
+          <div class="avatar c4">CG</div>
+          <h3>Mis compañeros de grupo</h3>
+          <p>Con ellos hago equipo en los proyectos y nos ayudamos cuando algo no nos sale en clase.</p>
+        </article>
+        <article class="tarjeta amarillo">
+          <div class="avatar c3">AS</div>
+          <h3>Mis amigos de siempre</h3>
+          <p>Los conozco desde hace tiempo. Aunque cambie la escuela o el horario, seguimos en contacto.</p>
+        </article>
+        <article class="tarjeta morado">
+          <div class="avatar c2">JU</div>
+          <h3>Mis amigos del juego</h3>
+          <p>Nos juntamos en línea para jugar, planear estrategias y reírnos de las partidas más locas.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Lo que más valoro en una amistad</h2>
+      <div class="tarjeta ancha">
+        <p>
+          <span class="etiqueta destacada">Confianza</span>
+          <span class="etiqueta">Respeto</span>
+          <span class="etiqueta">Apoyo</span>
+          <span class="etiqueta">Honestidad</span>
+          <span class="etiqueta">Buen humor</span>
+        </p>
+        <p>Una buena amistad se nota en los momentos difíciles: cuando alguien te ayuda a estudiar, te escucha o simplemente te acompaña.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Creada el 11 de octubre de 2026 por Juan Carlos Camarena Pillado.</p>
+    <p>Actividad Final de Construye Aplicaciones Web &middot; <a href="https://portal.cbtis224.edu.mx/" target="_blank" rel="noopener">CBTis 224</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!-- Practica 43 -->
+<!-- Juan Carlos Camarena Pillado -->
+<!-- Objetivo de la Practica: Insertar imágenes con CSS usando float (izquierda y derecha), padding, margin y border, y una imagen centrada sin texto lateral -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Im&aacute;genes con CSS</title>
+  <style>
+    .foto1 {
+      padding: 10px;
+      margin: 10px;
+      border: 2px solid black;
+      float: left;
+      width: 250px;
+    }
+    .foto2 {
+      padding: 10px;
+      margin: 10px;
+      border: 2px solid black;
+      float: right;
+      width: 250px;
+    }
+  </style>
+</head>
+<body>
+  <p>Juan Carlos Camarena Pillado</p>
+  <h2>IM&Aacute;GENES</h2>
+
+  <img class="foto1" src="img/imagen1.jpg" alt="imagen 1">
+  <img class="foto2" src="img/imagen2.jpg" alt="imagen 2">
+
+  <p>La propiedad float coloca la imagen a la izquierda o a la derecha del texto. Las propiedades padding y margin permiten controlar los espacios en blanco alrededor de la imagen, y la propiedad border pone un borde o marco alrededor de ella.</p>
+  <p>Mientras la imagen est&aacute; flotando, el texto la rodea y ocupa el espacio que queda libre en la p&aacute;gina, igual que en una revista.</p>
+
+  <p style="text-align: center; clear: both;"><img src="img/imagen3.jpg" alt="imagen 3" width="200"></p>
+  <p style="text-align: center;">Imagen sin texto lateral, centrada con text-align.</p>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!-- Actividad Final: Página Web Responsiva (Página Persona) -->
+<!-- Juan Carlos Camarena Pillado -->
+<!-- Objetivo de la Página: Presentar quién soy y dar acceso a las secciones de mi página personal (plantel, actividades, amigos, grupo y familia) con diseño responsivo -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport: evita que el celular "miniaturice" la página -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | Juan Carlos Camarena Pillado</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <p class="autor">Juan Carlos Camarena Pillado &middot; CBTis 224 &middot; 5.º semestre de Programación</p>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <a class="logo" href="index.html" title="Ir al inicio"></a>
+      <div>
+        <h1>Juan Carlos Camarena Pillado</h1>
+        <p class="lema">Estudiante de Programación &middot; CBTis No. 224, Culiacán, Sinaloa</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú de navegación: botones grandes en celular, barra horizontal en pantallas grandes -->
+  <nav class="menu">
+    <ul id="menupc">
+      <li><a href="index.html" class="activo" aria-current="page"><span class="titulo">Inicio</span><span class="subtitulos">Quién soy</span></a></li>
+      <li><a href="plantel.html"><span class="titulo">Mi plantel</span><span class="subtitulos">Dónde estudio</span></a></li>
+      <li><a href="actividades.html"><span class="titulo">Mis actividades</span><span class="subtitulos">Juegos y diversión</span></a></li>
+      <li><a href="amigos.html"><span class="titulo">Mis amigos</span><span class="subtitulos">Con quién convivo</span></a></li>
+      <li><a href="grupo.html"><span class="titulo">Mi grupo</span><span class="subtitulos">5.º de Programación</span></a></li>
+      <li><a href="familia.html"><span class="titulo">Mi familia</span><span class="subtitulos">Mi gente</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="contenedor">
+    <section class="presentacion">
+      <h2>¡Hola! Soy Juan Carlos</h2>
+      <p>Bienvenido a mi página personal. Aquí te cuento dónde estudio, qué hago en mi tiempo libre, quiénes son mis amigos, cómo es mi grupo y quiénes forman mi familia.</p>
+      <p>Estudio el quinto semestre de la carrera técnica en Programación en el CBTis 224, en Culiacán, Sinaloa. Esta página es mi Actividad Final de la asignatura Construye Aplicaciones Web y está hecha con HTML y CSS para que se vea bien en el celular, en la tableta y en la computadora.</p>
+    </section>
+
+    <section>
+      <h2>Conoce mi página</h2>
+      <div class="rejilla">
+        <article class="tarjeta">
+          <span class="icono">🏫</span>
+          <h3>Mi plantel</h3>
+          <p>Información general del CBTis 224: dónde está, qué carreras ofrece y cuál es su misión.</p>
+          <a class="enlace-tarjeta" href="plantel.html">Ver mi plantel</a>
+        </article>
+        <article class="tarjeta verde">
+          <span class="icono">🎮</span>
+          <h3>Mis actividades</h3>
+          <p>Lo que hago fuera de la escuela para divertirme y seguir aprendiendo.</p>
+          <a class="enlace-tarjeta" href="actividades.html">Ver mis actividades</a>
+        </article>
+        <article class="tarjeta amarillo">
+          <span class="icono">🤝</span>
+          <h3>Mis amigos</h3>
+          <p>Las personas con las que comparto la escuela, los juegos y muchas risas.</p>
+          <a class="enlace-tarjeta" href="amigos.html">Conocer a mis amigos</a>
+        </article>
+        <article class="tarjeta morado">
+          <span class="icono">👥</span>
+          <h3>Mi grupo</h3>
+          <p>Quinto semestre de Programación: mis materias y lo que hemos practicado en el curso.</p>
+          <a class="enlace-tarjeta" href="grupo.html">Ver mi grupo</a>
+        </article>
+        <article class="tarjeta rojo">
+          <span class="icono">🏠</span>
+          <h3>Mi familia</h3>
+          <p>Las personas que me apoyan todos los días y los valores que aprendí con ellas.</p>
+          <a class="enlace-tarjeta" href="familia.html">Ver mi familia</a>
+        </article>
+        <article class="tarjeta">
+          <span class="icono">💻</span>
+          <h3>Cómo está hecha</h3>
+          <p>Solo HTML y CSS: tipografía en em, rejilla flexible, imágenes adaptables, media queries y menú táctil. Cambia el tamaño de la ventana y verás cómo se acomoda.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Datos rápidos</h2>
+      <table class="tabla apilable">
+        <tr><th>Nombre</th><td>Juan Carlos Camarena Pillado</td></tr>
+        <tr><th>Plantel</th><td>CBTis No. 224 «Gral. Salvador Alvarado Rubio»</td></tr>
+        <tr><th>Ciudad</th><td>Culiacán Rosales, Sinaloa</td></tr>
+        <tr><th>Carrera técnica</th><td>Programación</td></tr>
+        <tr><th>Semestre</th><td>Quinto</td></tr>
+        <tr><th>Asignatura</th><td>Construye Aplicaciones Web</td></tr>
+      </table>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Creada el 11 de octubre de 2026 por Juan Carlos Camarena Pillado.</p>
+    <p>Actividad Final de Construye Aplicaciones Web &middot; <a href="https://portal.cbtis224.edu.mx/" target="_blank" rel="noopener">CBTis 224</a></p>
+  </footer>
+</body>
+</html>

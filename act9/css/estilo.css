@@ -1,0 +1,10 @@
+/* Estilo.css - Ejemplo de estilos externos (Práctica 42) */
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}

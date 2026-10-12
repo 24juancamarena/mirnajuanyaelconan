@@ -1,0 +1,268 @@
+/* ==========================================================
+   estilo.css - Página Web Responsiva (Página Persona)
+   Actividad Final - Construye Aplicaciones Web - CBTis 224
+   Juan Carlos Camarena Pillado
+
+   Técnicas de diseño responsivo usadas (según los apuntes):
+   1. Esquema tipográfico flexible: porcentaje base solo en BODY y el resto en EM.
+   2. Maquetación adaptable con media queries y grilla flexible en porcentajes.
+   3. Imágenes y medios adaptables: max-width:100% y logo distinto por tamaño de pantalla.
+   4. Navegación adaptable: botones grandes en celular y subtítulos con display:none/block.
+   Además: meta viewport en cada página y enfoque "mobile first".
+   ========================================================== */
+
+/* ---------- Colores (paleta de la página) ---------- */
+:root {
+  --azul: #1f4fd8;
+  --azul-oscuro: #0e1a3a;
+  --azul-claro: #e6edff;
+  --verde: #0fb894;
+  --amarillo: #ffb703;
+  --rojo: #e5484d;
+  --morado: #7c4dff;
+  --fondo: #f3f6fb;
+  --texto: #1c2540;
+  --gris: #5a6785;
+  --blanco: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+/* ---------- 1. Tipografía flexible ---------- */
+/* Zona común a todas las resoluciones: el porcentaje base va solo en BODY */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.55;
+  color: var(--texto);
+  background: var(--fondo);
+}
+p, li, td, th, dd, dt { font-size: 1em; }
+h1 { font-size: 1.7em; line-height: 1.2; margin: 0; }
+h2 { font-size: 1.45em; line-height: 1.25; margin: 0 0 0.6em; color: var(--azul-oscuro); }
+h3 { font-size: 1.15em; margin: 0 0 0.4em; color: var(--azul); }
+.autor { font-size: 0.8em; }
+.lema { font-size: 1em; }
+.pie, .nota { font-size: 0.85em; }
+
+/* Se amplían los textos al crecer la pantalla (solo cambia el valor base) */
+@media screen and (min-width: 800px)  { body { font-size: 110%; } }
+@media screen and (min-width: 1200px) { body { font-size: 120%; } }
+
+/* ---------- 3. Imágenes y medios adaptables ---------- */
+img, video, object { max-width: 100%; height: auto; }
+
+/* ---------- Estructura general ---------- */
+.contenedor {
+  width: 92%;
+  max-width: 62em;
+  margin: 0 auto;
+}
+
+/* Franja superior con mi nombre */
+.autor {
+  margin: 0;
+  padding: 0.5em 4%;
+  text-align: center;
+  color: #cdd8ff;
+  background: #080f24;
+  letter-spacing: 0.02em;
+}
+
+/* Cabecera con logo (el logo cambia de tamaño con media queries) */
+.cabecera {
+  color: var(--blanco);
+  background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul) 100%);
+  padding: 1.2em 0;
+}
+.cabecera .contenedor {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.logo {
+  display: block;
+  flex: none;
+  width: 4.6em;
+  height: 4.6em;
+  background: url("../img/logo-chico.png") no-repeat center / contain;
+}
+/* El logo más pequeño va primero, sin condiciones, para el celular más chico */
+@media screen and (min-width: 480px) {
+  .logo { width: 5.5em; height: 5.5em; background-image: url("../img/logo-mediano.png"); }
+}
+@media screen and (min-width: 800px) {
+  .logo { width: 7em; height: 7em; background-image: url("../img/logo-grande.png"); }
+}
+.lema { margin: 0.3em 0 0; color: #cdd8ff; }
+
+/* ---------- 4. Navegación adaptable ---------- */
+.menu { background: var(--azul-oscuro); border-bottom: 0.25em solid var(--amarillo); }
+#menupc { list-style: none; margin: 0; padding: 0; }
+#menupc li { border-bottom: 1px solid rgba(255, 255, 255, 0.12); }
+#menupc a {
+  display: block;
+  min-height: 3em;            /* botones grandes para pulsar con el dedo */
+  padding: 0.85em 4%;
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 600;
+}
+#menupc a:hover, #menupc a:focus { background: #1b2d5c; }
+#menupc a.activo { background: var(--azul); }
+.titulo { display: block; }
+
+/* Los subtítulos se ocultan por defecto y se muestran en pantallas grandes */
+.subtitulos { display: none; font-size: 0.8em; font-weight: 400; color: #b8c6f5; }
+
+@media screen and (min-width: 640px) {
+  #menupc { display: flex; flex-wrap: wrap; }
+  #menupc li { flex: 1 1 33.33%; border-bottom: 0; border-right: 1px solid rgba(255, 255, 255, 0.12); }
+  #menupc a { text-align: center; padding: 0.8em 0.4em; }
+}
+@media screen and (min-width: 1024px) {
+  #menupc li { flex: 1 1 16.66%; }
+  .subtitulos { display: block; }
+}
+
+/* ---------- Contenido ---------- */
+main { padding: 1.5em 0 2em; }
+section { margin-bottom: 2em; }
+
+.presentacion {
+  padding: 1.4em 1.2em;
+  color: var(--blanco);
+  background: linear-gradient(135deg, var(--azul) 0%, var(--morado) 100%);
+  border-radius: 0.9em;
+}
+.presentacion h2 { color: var(--blanco); }
+.presentacion p { margin: 0 0 0.7em; }
+.presentacion p:last-child { margin-bottom: 0; }
+
+/* ---------- 2. Grilla flexible (anchos en porcentaje) ---------- */
+/* Celular: una columna. Tableta: 2 columnas. Escritorio: 3 columnas.
+   Fórmula: tamaño del elemento / tamaño del contexto  ->  (100% - 2 huecos de 3%) / 3 = 31.33% */
+.rejilla {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1.2em;
+  column-gap: 3%;
+}
+.tarjeta {
+  width: 100%;
+  padding: 1.1em 1.2em 1.2em;
+  background: var(--blanco);
+  border-top: 0.35em solid var(--azul);
+  border-radius: 0.7em;
+  box-shadow: 0 0.15em 0.9em rgba(14, 26, 58, 0.09);
+}
+.tarjeta p { margin: 0 0 0.6em; }
+.tarjeta p:last-child { margin-bottom: 0; }
+.tarjeta .icono { display: block; font-size: 2em; line-height: 1; margin-bottom: 0.25em; }
+.tarjeta.verde { border-top-color: var(--verde); }
+.tarjeta.amarillo { border-top-color: var(--amarillo); }
+.tarjeta.rojo { border-top-color: var(--rojo); }
+.tarjeta.morado { border-top-color: var(--morado); }
+
+@media screen and (min-width: 640px)  { .tarjeta { width: 48.5%; } }
+@media screen and (min-width: 1024px) { .tarjeta { width: 31.33%; } }
+/* Tarjeta ancha: ocupa toda la fila en cualquier tamaño */
+.tarjeta.ancha { width: 100%; }
+
+.enlace-tarjeta {
+  display: inline-block;
+  margin-top: 0.3em;
+  padding: 0.5em 0.9em;
+  color: var(--blanco);
+  background: var(--azul);
+  border-radius: 0.5em;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+.enlace-tarjeta:hover, .enlace-tarjeta:focus { background: var(--azul-oscuro); }
+
+/* ---------- Tablas ---------- */
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--blanco);
+  border-radius: 0.6em;
+  overflow: hidden;
+  box-shadow: 0 0.15em 0.9em rgba(14, 26, 58, 0.09);
+}
+.tabla th, .tabla td { padding: 0.7em 0.9em; text-align: left; vertical-align: top; }
+.tabla th { width: 34%; color: var(--azul-oscuro); background: var(--azul-claro); }
+.tabla tr + tr th, .tabla tr + tr td { border-top: 1px solid #dfe6f5; }
+.tabla thead th { width: auto; color: var(--blanco); background: var(--azul); }
+
+/* En celulares muy chicos las celdas llevan menos relleno y el texto largo se parte */
+.tabla th, .tabla td { overflow-wrap: break-word; }
+@media screen and (max-width: 479px) {
+  .tabla th, .tabla td { padding: 0.6em 0.6em; }
+}
+
+/* En celular cada fila de la tabla de datos se apila */
+@media screen and (max-width: 639px) {
+  .tabla.apilable th, .tabla.apilable td { display: block; width: 100%; }
+  .tabla.apilable tr + tr th { border-top: 1px solid #dfe6f5; }
+  .tabla.apilable td { padding-top: 0.3em; }
+  .tabla.apilable tr + tr td { border-top: 0; }
+}
+
+/* ---------- Listas, etiquetas y avatares ---------- */
+.lista-simple { margin: 0; padding-left: 1.2em; }
+.lista-simple li { margin-bottom: 0.35em; }
+.etiqueta {
+  display: inline-block;
+  margin: 0.15em 0.2em 0.15em 0;
+  padding: 0.2em 0.7em;
+  font-size: 0.85em;
+  color: var(--azul-oscuro);
+  background: var(--azul-claro);
+  border-radius: 2em;
+}
+.etiqueta.destacada { color: var(--azul-oscuro); background: var(--amarillo); font-weight: 700; }
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.2em;
+  height: 3.2em;
+  margin-bottom: 0.6em;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: var(--blanco);
+  background: linear-gradient(135deg, var(--azul), var(--verde));
+  border-radius: 50%;
+}
+.avatar.c2 { background: linear-gradient(135deg, var(--morado), var(--rojo)); }
+.avatar.c3 { background: linear-gradient(135deg, var(--amarillo), var(--rojo)); }
+.avatar.c4 { background: linear-gradient(135deg, var(--verde), var(--azul-oscuro)); }
+
+/* Línea de tiempo del curso */
+.tiempo { list-style: none; margin: 0; padding: 0 0 0 1.2em; border-left: 0.2em solid var(--azul); }
+.tiempo li { position: relative; margin-bottom: 1em; padding-left: 0.9em; }
+.tiempo li::before {
+  content: "";
+  position: absolute;
+  left: -1.75em;
+  top: 0.45em;
+  width: 0.8em;
+  height: 0.8em;
+  background: var(--amarillo);
+  border: 0.15em solid var(--azul);
+  border-radius: 50%;
+}
+.tiempo strong { color: var(--azul-oscuro); }
+
+/* ---------- Pie de página ---------- */
+.pie {
+  padding: 1.2em 4%;
+  text-align: center;
+  color: #cdd8ff;
+  background: var(--azul-oscuro);
+}
+.pie p { margin: 0.2em 0; }
+.pie a { color: var(--amarillo); }

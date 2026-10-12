@@ -1,0 +1,102 @@
+<!-- Actividad Final: Página Web Responsiva (Página Persona) -->
+<!-- Juan Carlos Camarena Pillado -->
+<!-- Objetivo de la Página: Presentar mis actividades extraescolares y entretenimientos como juegos y diversiones -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport: evita que el celular "miniaturice" la página -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis actividades | Juan Carlos Camarena Pillado</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <p class="autor">Juan Carlos Camarena Pillado &middot; CBTis 224 &middot; 5.º semestre de Programación</p>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <a class="logo" href="index.html" title="Ir al inicio"></a>
+      <div>
+        <h1>Juan Carlos Camarena Pillado</h1>
+        <p class="lema">Estudiante de Programación &middot; CBTis No. 224, Culiacán, Sinaloa</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú de navegación: botones grandes en celular, barra horizontal en pantallas grandes -->
+  <nav class="menu">
+    <ul id="menupc">
+      <li><a href="index.html"><span class="titulo">Inicio</span><span class="subtitulos">Quién soy</span></a></li>
+      <li><a href="plantel.html"><span class="titulo">Mi plantel</span><span class="subtitulos">Dónde estudio</span></a></li>
+      <li><a href="actividades.html" class="activo" aria-current="page"><span class="titulo">Mis actividades</span><span class="subtitulos">Juegos y diversión</span></a></li>
+      <li><a href="amigos.html"><span class="titulo">Mis amigos</span><span class="subtitulos">Con quién convivo</span></a></li>
+      <li><a href="grupo.html"><span class="titulo">Mi grupo</span><span class="subtitulos">5.º de Programación</span></a></li>
+      <li><a href="familia.html"><span class="titulo">Mi familia</span><span class="subtitulos">Mi gente</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="contenedor">
+    <section class="presentacion">
+      <h2>Mis actividades extraescolares</h2>
+      <p>Cuando termino las tareas me gusta divertirme y seguir aprendiendo. Estos son mis entretenimientos y las actividades con las que me relajo después de la escuela.</p>
+    </section>
+
+    <section>
+      <h2>¿Qué hago en mi tiempo libre?</h2>
+      <div class="rejilla">
+        <!-- Editar: cambia estas tarjetas por tus actividades reales -->
+        <article class="tarjeta verde">
+          <span class="icono">🎮</span>
+          <h3>Videojuegos</h3>
+          <p>Juego con mis amigos en línea y en la computadora. Me ayudan a pensar rápido, a trabajar en equipo y a relajarme.</p>
+        </article>
+        <article class="tarjeta">
+          <span class="icono">💻</span>
+          <h3>Programación por mi cuenta</h3>
+          <p>Practico HTML y CSS y pruebo mis propias ideas. Cada práctica de la escuela la repito con cambios para entenderla mejor.</p>
+        </article>
+        <article class="tarjeta morado">
+          <span class="icono">🎵</span>
+          <h3>Música y series</h3>
+          <p>Escucho música mientras programo y veo series y videos sobre tecnología para conocer lo que se viene.</p>
+        </article>
+        <article class="tarjeta amarillo">
+          <span class="icono">⚽</span>
+          <h3>Deporte y convivencia</h3>
+          <p>Salgo a jugar o a caminar con mi familia y mis amigos para despejar la mente.</p>
+        </article>
+        <article class="tarjeta rojo">
+          <span class="icono">🧩</span>
+          <h3>Retos de ingenio</h3>
+          <p>Me gustan los acertijos y los retos de lógica, porque se parecen a resolver problemas de programación.</p>
+        </article>
+        <article class="tarjeta verde">
+          <span class="icono">📚</span>
+          <h3>Aprender cosas nuevas</h3>
+          <p>Veo tutoriales y leo documentación de páginas como MDN y W3Schools para mejorar mis proyectos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Resumen de mi tiempo libre</h2>
+      <table class="tabla">
+        <thead>
+          <tr><th>Actividad</th><th>Con quién</th><th>Para qué me sirve</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Videojuegos</td><td>Mis amigos</td><td>Trabajar en equipo y relajarme</td></tr>
+          <tr><td>Programación</td><td>Yo solo</td><td>Practicar y entender mejor las clases</td></tr>
+          <tr><td>Música y series</td><td>Solo o en familia</td><td>Descansar la mente</td></tr>
+          <tr><td>Deporte</td><td>Familia y amigos</td><td>Moverme y convivir</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Creada el 11 de octubre de 2026 por Juan Carlos Camarena Pillado.</p>
+    <p>Actividad Final de Construye Aplicaciones Web &middot; <a href="https://portal.cbtis224.edu.mx/" target="_blank" rel="noopener">CBTis 224</a></p>
+  </footer>
+</body>
+</html>

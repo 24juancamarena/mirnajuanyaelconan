@@ -1,0 +1,58 @@
+<!-- Practica 45 -->
+<!-- Juan Carlos Camarena Pillado -->
+<!-- Objetivo de la Practica: Aplicar colores con valores hexadecimales en CSS usando la tabla simplificada de colores (primarios aditivos, sustractivos y secundarios) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla simplificada de colores</title>
+  <style>
+    body { font-family: Verdana, sans-serif; }
+    li   { margin: 3px 0; }
+    .m {
+      display: inline-block;
+      width: 1.1em;
+      height: 1.1em;
+      border: 1px solid #333;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+    .rosa { color: #FF00FF; font-size: 1.4em; }
+  </style>
+</head>
+<body>
+  <p>Juan Carlos Camarena Pillado</p>
+  <h2>Tabla simplificada de colores</h2>
+
+  <h3>Primarios aditivos saturados</h3>
+  <ul>
+    <li><span class="m" style="background:#FF0000"></span>ROJO = #FF0000</li>
+    <li><span class="m" style="background:#00FF00"></span>VERDE = #00FF00</li>
+    <li><span class="m" style="background:#0000FF"></span>AZUL = #0000FF</li>
+    <li><span class="m" style="background:#FFFFFF"></span>BLANCO = #FFFFFF (los tres juntos)</li>
+  </ul>
+
+  <h3>Primarios sustractivos nulos</h3>
+  <ul>
+    <li><span class="m" style="background:#00FFFF"></span>CYAN = #00FFFF</li>
+    <li><span class="m" style="background:#FF00FF"></span>MAGENTA = #FF00FF</li>
+    <li><span class="m" style="background:#FFFF00"></span>AMARILLO = #FFFF00</li>
+    <li><span class="m" style="background:#000000"></span>NEGRO = #000000 (los tres juntos)</li>
+  </ul>
+
+  <h3>Algunos secundarios y terciarios</h3>
+  <ul>
+    <li><span class="m" style="background:#808080"></span>GRIS = #808080</li>
+    <li><span class="m" style="background:#FF8080"></span>ROSA = #FF8080</li>
+    <li><span class="m" style="background:#800080"></span>VIOLETA = #800080</li>
+    <li><span class="m" style="background:#80FFFF"></span>CELESTE = #80FFFF</li>
+    <li><span class="m" style="background:#800000"></span>MARR&Oacute;N = #800000</li>
+    <li><span class="m" style="background:#FF8000"></span>NARANJA = #FF8000</li>
+    <li><span class="m" style="background:#8000FF"></span>LAVANDA = #8000FF</li>
+    <li><span class="m" style="background:#00FF80"></span>TURQUESA = #00FF80</li>
+    <li><span class="m" style="background:#BBBB20"></span>ORO VIEJO = #BBBB20</li>
+  </ul>
+
+  <p class="rosa">Texto rosa (color: #FF00FF)</p>
+</body>
+</html>

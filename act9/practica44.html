@@ -1,0 +1,33 @@
+<!-- Practica 44 -->
+<!-- Juan Carlos Camarena Pillado -->
+<!-- Objetivo de la Practica: Aplicar estilos de fondo con background-color, background-image, background-repeat, background-position y background-attachment -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Estilos de fondo</title>
+  <style>
+    body {
+      background-color: #cfe8ff;
+      background-image: url("img/fondo.png");
+      background-repeat: repeat-x;
+      background-position: center top;
+      background-attachment: fixed;
+    }
+    .texto {
+      background-color: white;
+      padding: 10px;
+      margin-top: 90px;
+      border: 1px solid #335;
+    }
+  </style>
+</head>
+<body>
+  <p>Juan Carlos Camarena Pillado</p>
+  <div class="texto">
+    <h2>Estilos de fondo</h2>
+    <p>La p&aacute;gina tiene un color de fondo (background-color) por si la imagen no se llega a ver.</p>
+    <p>La imagen se repite solo en horizontal (repeat-x), se coloca arriba al centro (center top) y queda fija cuando se desplaza la ventana (fixed).</p>
+  </div>
+</body>
+</html>

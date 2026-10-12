@@ -1,0 +1,112 @@
+<!-- Actividad Final: Página Web Responsiva (Página Persona) -->
+<!-- Juan Carlos Camarena Pillado -->
+<!-- Objetivo de la Página: Mostrar la información general del CBTis 224 donde estudio: datos, misión, visión y carreras técnicas -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport: evita que el celular "miniaturice" la página -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi plantel | Juan Carlos Camarena Pillado</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <p class="autor">Juan Carlos Camarena Pillado &middot; CBTis 224 &middot; 5.º semestre de Programación</p>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <a class="logo" href="index.html" title="Ir al inicio"></a>
+      <div>
+        <h1>Juan Carlos Camarena Pillado</h1>
+        <p class="lema">Estudiante de Programación &middot; CBTis No. 224, Culiacán, Sinaloa</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú de navegación: botones grandes en celular, barra horizontal en pantallas grandes -->
+  <nav class="menu">
+    <ul id="menupc">
+      <li><a href="index.html"><span class="titulo">Inicio</span><span class="subtitulos">Quién soy</span></a></li>
+      <li><a href="plantel.html" class="activo" aria-current="page"><span class="titulo">Mi plantel</span><span class="subtitulos">Dónde estudio</span></a></li>
+      <li><a href="actividades.html"><span class="titulo">Mis actividades</span><span class="subtitulos">Juegos y diversión</span></a></li>
+      <li><a href="amigos.html"><span class="titulo">Mis amigos</span><span class="subtitulos">Con quién convivo</span></a></li>
+      <li><a href="grupo.html"><span class="titulo">Mi grupo</span><span class="subtitulos">5.º de Programación</span></a></li>
+      <li><a href="familia.html"><span class="titulo">Mi familia</span><span class="subtitulos">Mi gente</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="contenedor">
+    <section class="presentacion">
+      <h2>Dónde estudio: CBTis No. 224</h2>
+      <p>Estudio en el CBTis No. 224 «Gral. Salvador Alvarado Rubio», una escuela de nivel medio superior de Culiacán, Sinaloa. Es una institución bivalente: mientras curso el bachillerato, también estudio una carrera técnica.</p>
+    </section>
+
+    <section>
+      <h2>Información general</h2>
+      <table class="tabla apilable">
+        <tr><th>Nombre oficial</th><td>CBTis No. 224 «Gral. Salvador Alvarado Rubio»</td></tr>
+        <tr><th>Nivel educativo</th><td>Media superior, modalidad bivalente (bachillerato y carrera técnica al mismo tiempo)</td></tr>
+        <tr><th>Dirección</th><td>Av. Albert Einstein S/N, Rosales, C.P. 80230, Culiacán Rosales, Sinaloa</td></tr>
+        <tr><th>Teléfonos</th><td>(667) 712 5767 y 716 8398</td></tr>
+        <tr><th>Portal en línea</th><td><a href="https://portal.cbtis224.edu.mx/" target="_blank" rel="noopener">portal.cbtis224.edu.mx</a></td></tr>
+        <tr><th>Redes sociales</th><td>
+          <a href="https://www.instagram.com/cbtis224.oficial/" target="_blank" rel="noopener">Instagram</a> y
+          <a href="https://www.facebook.com/cbtis224.oficial" target="_blank" rel="noopener">Facebook</a>
+          (cbtis224.oficial)</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Misión y visión</h2>
+      <div class="rejilla">
+        <article class="tarjeta verde">
+          <h3>Misión</h3>
+          <p>Formar bachilleres y profesionales técnicos con conocimientos tecnológicos en las áreas industrial, comercial y de servicios, para contribuir al desarrollo sustentable del país.</p>
+        </article>
+        <article class="tarjeta amarillo">
+          <h3>Visión</h3>
+          <p>Ser una escuela de educación media superior certificada, centrada en el aprendizaje y en el desarrollo de conocimientos tanto tecnológicos como humanísticos.</p>
+        </article>
+        <article class="tarjeta morado">
+          <h3>Para egresar como técnico</h3>
+          <ul class="lista-simple">
+            <li>Concluir el bachillerato y la carrera técnica.</li>
+            <li>Un año de actividades cocurriculares los sábados.</li>
+            <li>480 horas de servicio social.</li>
+            <li>240 horas de prácticas profesionales.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Carreras técnicas del plantel</h2>
+      <div class="tarjeta ancha">
+        <p>
+          <span class="etiqueta">Mecánica Industrial</span>
+          <span class="etiqueta destacada">Programación · la mía</span>
+          <span class="etiqueta">Mecatrónica</span>
+          <span class="etiqueta">Producción Industrial de Alimentos</span>
+          <span class="etiqueta">Inteligencia Artificial</span>
+        </p>
+        <p>Yo estudio Programación. En la asignatura Construye Aplicaciones Web aprendo a crear páginas con HTML y CSS, como la que estás viendo.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Fuentes consultadas</h2>
+      <div class="tarjeta ancha">
+        <ul class="lista-simple">
+          <li>CBTis 224. <a href="https://portal.cbtis224.edu.mx/p/CBTIS224" target="_blank" rel="noopener">Conócenos</a>: misión, visión y carreras técnicas.</li>
+          <li>CBTis 224. <a href="https://portal.cbtis224.edu.mx/" target="_blank" rel="noopener">Portal oficial</a>: ubicación, teléfonos y redes sociales.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Creada el 11 de octubre de 2026 por Juan Carlos Camarena Pillado.</p>
+    <p>Actividad Final de Construye Aplicaciones Web &middot; <a href="https://portal.cbtis224.edu.mx/" target="_blank" rel="noopener">CBTis 224</a></p>
+  </footer>
+</body>
+</html>

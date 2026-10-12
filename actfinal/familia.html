@@ -1,0 +1,101 @@
+<!-- Actividad Final: Página Web Responsiva (Página Persona) -->
+<!-- Juan Carlos Camarena Pillado -->
+<!-- Objetivo de la Página: Presentar a mi familia y los valores que aprendí en casa -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport: evita que el celular "miniaturice" la página -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi familia | Juan Carlos Camarena Pillado</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <p class="autor">Juan Carlos Camarena Pillado &middot; CBTis 224 &middot; 5.º semestre de Programación</p>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <a class="logo" href="index.html" title="Ir al inicio"></a>
+      <div>
+        <h1>Juan Carlos Camarena Pillado</h1>
+        <p class="lema">Estudiante de Programación &middot; CBTis No. 224, Culiacán, Sinaloa</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú de navegación: botones grandes en celular, barra horizontal en pantallas grandes -->
+  <nav class="menu">
+    <ul id="menupc">
+      <li><a href="index.html"><span class="titulo">Inicio</span><span class="subtitulos">Quién soy</span></a></li>
+      <li><a href="plantel.html"><span class="titulo">Mi plantel</span><span class="subtitulos">Dónde estudio</span></a></li>
+      <li><a href="actividades.html"><span class="titulo">Mis actividades</span><span class="subtitulos">Juegos y diversión</span></a></li>
+      <li><a href="amigos.html"><span class="titulo">Mis amigos</span><span class="subtitulos">Con quién convivo</span></a></li>
+      <li><a href="grupo.html"><span class="titulo">Mi grupo</span><span class="subtitulos">5.º de Programación</span></a></li>
+      <li><a href="familia.html" class="activo" aria-current="page"><span class="titulo">Mi familia</span><span class="subtitulos">Mi gente</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="contenedor">
+    <section class="presentacion">
+      <h2>Mi familia</h2>
+      <p>Mi familia es mi principal apoyo. Gracias a ella puedo estudiar, equivocarme, volver a intentarlo y seguir adelante con mis proyectos.</p>
+    </section>
+
+    <section>
+      <h2>Mi gente</h2>
+      <div class="rejilla">
+        <!-- Editar: agrega el nombre de cada familiar y una descripción -->
+        <article class="tarjeta rojo">
+          <span class="icono">👨</span>
+          <h3>Mi papá</h3>
+          <p>Me enseña con su ejemplo que el esfuerzo diario da resultados.</p>
+        </article>
+        <article class="tarjeta rojo">
+          <span class="icono">👩</span>
+          <h3>Mi mamá</h3>
+          <p>Siempre me anima a seguir y me recuerda que puedo lograr lo que me proponga.</p>
+        </article>
+        <article class="tarjeta amarillo">
+          <span class="icono">🧑‍🤝‍🧑</span>
+          <h3>Mis hermanos</h3>
+          <p>Con ellos comparto juegos, bromas y también regaños. Son mis primeros amigos.</p>
+        </article>
+        <article class="tarjeta verde">
+          <span class="icono">👵</span>
+          <h3>Mis abuelos y tíos</h3>
+          <p>Nos reunimos en las fiestas y los fines de semana. Siempre hay historias nuevas que contar.</p>
+        </article>
+        <article class="tarjeta morado">
+          <span class="icono">🍽️</span>
+          <h3>Comidas en familia</h3>
+          <p>Es el momento del día en que nos ponemos al corriente de todo lo que pasó.</p>
+        </article>
+        <article class="tarjeta">
+          <span class="icono">🌟</span>
+          <h3>Mi meta</h3>
+          <p>Terminar mi carrera técnica en Programación y hacer que mi familia se sienta orgullosa.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Valores que aprendí en casa</h2>
+      <div class="tarjeta ancha">
+        <p>
+          <span class="etiqueta destacada">Respeto</span>
+          <span class="etiqueta">Responsabilidad</span>
+          <span class="etiqueta">Honestidad</span>
+          <span class="etiqueta">Esfuerzo</span>
+          <span class="etiqueta">Unión</span>
+        </p>
+        <p>Estos valores me acompañan en la escuela, con mis amigos y en cada proyecto que hago.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Creada el 11 de octubre de 2026 por Juan Carlos Camarena Pillado.</p>
+    <p>Actividad Final de Construye Aplicaciones Web &middot; <a href="https://portal.cbtis224.edu.mx/" target="_blank" rel="noopener">CBTis 224</a></p>
+  </footer>
+</body>
+</html>

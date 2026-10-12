@@ -1,0 +1,103 @@
+<!-- Actividad Final: Página Web Responsiva (Página Persona) -->
+<!-- Juan Carlos Camarena Pillado -->
+<!-- Objetivo de la Página: Presentar mi grupo de quinto semestre de Programación, mis materias y lo practicado en el curso -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <!-- Viewport: evita que el celular "miniaturice" la página -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi grupo | Juan Carlos Camarena Pillado</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <p class="autor">Juan Carlos Camarena Pillado &middot; CBTis 224 &middot; 5.º semestre de Programación</p>
+
+  <header class="cabecera">
+    <div class="contenedor">
+      <a class="logo" href="index.html" title="Ir al inicio"></a>
+      <div>
+        <h1>Juan Carlos Camarena Pillado</h1>
+        <p class="lema">Estudiante de Programación &middot; CBTis No. 224, Culiacán, Sinaloa</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menú de navegación: botones grandes en celular, barra horizontal en pantallas grandes -->
+  <nav class="menu">
+    <ul id="menupc">
+      <li><a href="index.html"><span class="titulo">Inicio</span><span class="subtitulos">Quién soy</span></a></li>
+      <li><a href="plantel.html"><span class="titulo">Mi plantel</span><span class="subtitulos">Dónde estudio</span></a></li>
+      <li><a href="actividades.html"><span class="titulo">Mis actividades</span><span class="subtitulos">Juegos y diversión</span></a></li>
+      <li><a href="amigos.html"><span class="titulo">Mis amigos</span><span class="subtitulos">Con quién convivo</span></a></li>
+      <li><a href="grupo.html" class="activo" aria-current="page"><span class="titulo">Mi grupo</span><span class="subtitulos">5.º de Programación</span></a></li>
+      <li><a href="familia.html"><span class="titulo">Mi familia</span><span class="subtitulos">Mi gente</span></a></li>
+    </ul>
+  </nav>
+
+  <main class="contenedor">
+    <section class="presentacion">
+      <h2>Mi grupo</h2>
+      <p>Mi grupo es de quinto semestre de la carrera técnica en Programación del CBTis 224. Compartimos clases, tareas y proyectos, y aprendemos juntos a crear aplicaciones.</p>
+    </section>
+
+    <section>
+      <h2>Datos del grupo</h2>
+      <table class="tabla apilable">
+        <tr><th>Plantel</th><td>CBTis No. 224, Culiacán, Sinaloa</td></tr>
+        <tr><th>Carrera técnica</th><td>Programación</td></tr>
+        <tr><th>Semestre</th><td>Quinto</td></tr>
+        <tr><th>Asignatura de esta página</th><td>Construye Aplicaciones Web</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Materias del semestre</h2>
+      <div class="rejilla">
+        <article class="tarjeta">
+          <h3>Construye Aplicaciones Web</h3>
+          <p>Aprendemos HTML y CSS para crear páginas y aplicaciones web.</p>
+        </article>
+        <article class="tarjeta verde">
+          <h3>Desarrolla Aplicaciones Móviles</h3>
+          <p>Diseñamos programas pensados para celulares y tabletas.</p>
+        </article>
+        <article class="tarjeta amarillo">
+          <h3>Administra y Configura Plataformas de E-learning</h3>
+          <p>Conocemos las plataformas que se usan para estudiar en línea.</p>
+        </article>
+        <article class="tarjeta morado">
+          <h3>Cálculo Integral</h3>
+          <p>Matemáticas para resolver problemas de áreas y acumulación.</p>
+        </article>
+        <article class="tarjeta rojo">
+          <h3>Inglés V</h3>
+          <p>Practicamos el idioma que más se usa en la tecnología.</p>
+        </article>
+        <article class="tarjeta verde">
+          <h3>Física II</h3>
+          <p>Ciencia para entender cómo funcionan las cosas que nos rodean.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Lo que hemos practicado en el curso</h2>
+      <ul class="tiempo">
+        <li><strong>Act 4.</strong> Mi primera página: el primer documento HTML.</li>
+        <li><strong>Act 5 · Prácticas 1 a 9.</strong> Estructura, párrafos, negritas, líneas y estilos de texto.</li>
+        <li><strong>Act 6 · Prácticas 11 a 20.</strong> Tamaño, color y tipo de fuente, títulos, marquesinas y fondos.</li>
+        <li><strong>Act 7 · Prácticas 21 a 23.</strong> Imágenes, enlaces y marcos.</li>
+        <li><strong>Act 8 · Prácticas 24 a 32.</strong> Listas, tablas y formularios.</li>
+        <li><strong>Act 9 · Prácticas 33 a 46.</strong> Hojas de estilo CSS y colores.</li>
+        <li><strong>Actividad final.</strong> Esta página web responsiva.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Creada el 11 de octubre de 2026 por Juan Carlos Camarena Pillado.</p>
+    <p>Actividad Final de Construye Aplicaciones Web &middot; <a href="https://portal.cbtis224.edu.mx/" target="_blank" rel="noopener">CBTis 224</a></p>
+  </footer>
+</body>
+</html>

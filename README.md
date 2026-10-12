@@ -64,4 +64,9 @@ py generador_imagenes.py act6/practica14.html
   - `act4`: Práctica 1.
   - `act5`: Prácticas 1 a 9.
   - `act6`: Prácticas 11 a 20 con imágenes generadas e insertadas automáticamente en el documento Word.
-  - Documento maestro `JCCP_Web_Practicas.docx` y copia para entrega `JCCP_Web_Act6.docx` en `docs/`.
+  - `act7`: Prácticas 21 a 23 (imágenes, enlaces y marcos).
+  - `act8`: Prácticas 24 a 32a, más celdas diferentes y formulario básico (listas, tablas y formularios). La Práctica 30 usa `act8/IMG/img1.gif`.
+  - `act9`: Prácticas 33 a 46 (CSS y colores). Las hojas de estilo externas están en `act9/css/` y las imágenes en `act9/img/`.
+  - `actfinal`: Actividad Final, página web responsiva (`index.html`, `plantel.html`, `actividades.html`, `amigos.html`, `grupo.html` y `familia.html`, con `css/estilo.css` e `img/`).
+  - `capturas/`: una imagen por práctica (`practicaN.png`) y las capturas de la actividad final (`actfinal_<página>_<escritorio|tableta|celular>.png` y `actfinal_organigrama.png`).
+  - Documento maestro `JCCP_Web_Practicas.docx` (ya incluye las prácticas 24 a 46 y un resumen de la actividad final) y copias para entrega en `docs/`: `JCCP_Web_Act6.docx`, `JCCP_Web_Act8.docx`, `JCCP_Web_Act9.docx` y `JCCP_ActFin_HTML.docx`.
