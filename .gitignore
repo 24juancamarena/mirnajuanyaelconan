@@ -1,3 +1,7 @@
 desktop.ini
 ~$*
 *.tmp
+
+# Exportación de Instagram: datos personales, nunca subir
+actfinal/img/instagram-*
+instagram-export/

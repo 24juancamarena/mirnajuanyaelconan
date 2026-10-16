@@ -5,7 +5,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <!-- Viewport: evita que el celular "miniaturice" la página -->
+  <!-- viewport: pa que el cel no haga la página chiquita -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio | Juan Carlos Camarena Pillado</title>
   <link rel="stylesheet" href="css/estilo.css">
@@ -23,7 +23,7 @@
     </div>
   </header>
 
-  <!-- Menú de navegación: botones grandes en celular, barra horizontal en pantallas grandes -->
+  <!-- nav bonito -->
   <nav class="menu">
     <ul id="menupc">
       <li><a href="index.html" class="activo" aria-current="page"><span class="titulo">Inicio</span><span class="subtitulos">Quién soy</span></a></li>
@@ -40,43 +40,50 @@
       <h2>¡Hola! Soy Juan Carlos</h2>
       <p>Bienvenido a mi página personal. Aquí te cuento dónde estudio, qué hago en mi tiempo libre, quiénes son mis amigos, cómo es mi grupo y quiénes forman mi familia.</p>
       <p>Estudio el quinto semestre de la carrera técnica en Programación en el CBTis 224, en Culiacán, Sinaloa. Esta página es mi Actividad Final de la asignatura Construye Aplicaciones Web y está hecha con HTML y CSS para que se vea bien en el celular, en la tableta y en la computadora.</p>
+      <p>Llevo 6 años programando: empecé con Node.js haciendo el backend de bots para herramientas de chat como WhatsApp, Discord y Telegram, y también hago páginas con HTML, CSS y JavaScript. Además me interesan la química, la medicina y la ciencia; por eso quiero estudiar una carrera en el área <a href="https://es.wikipedia.org/wiki/Educaci%C3%B3n_STEM" target="_blank" rel="noopener">STEM</a>.</p>
+      <ul class="stats">
+        <li><strong>5.º</strong><span>Semestre</span></li>
+        <li><strong>5I</strong><span>Grupo</span></li>
+        <li><strong>6 años</strong><span>Programando</span></li>
+        <li><strong><svg class="logo-juego valorant" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.792 2.152a.252.252 0 0 0-.098.083c-3.384 4.23-6.769 8.46-10.15 12.69-.107.093-.025.288.119.265 2.439.003 4.877 0 7.316.001a.66.66 0 0 0 .552-.25c.774-.967 1.55-1.934 2.324-2.903a.72.72 0 0 0 .144-.49c-.002-3.077 0-6.153-.003-9.23.016-.11-.1-.206-.204-.167zM.077 2.166c-.077.038-.074.132-.076.205.002 3.074.001 6.15.001 9.225a.679.679 0 0 0 .158.463l7.64 9.55c.12.152.308.25.505.247 2.455 0 4.91.003 7.365 0 .142.02.222-.174.116-.265C10.661 15.176 5.526 8.766.4 2.35c-.08-.094-.174-.272-.322-.184z"/></svg>Valorant</strong><span>Juego favorito</span></li>
+      </ul>
     </section>
 
     <section>
       <h2>Conoce mi página</h2>
       <div class="rejilla">
         <article class="tarjeta">
-          <span class="icono">🏫</span>
+          <span class="icono">Inciso a</span>
           <h3>Mi plantel</h3>
           <p>Información general del CBTis 224: dónde está, qué carreras ofrece y cuál es su misión.</p>
           <a class="enlace-tarjeta" href="plantel.html">Ver mi plantel</a>
         </article>
         <article class="tarjeta verde">
-          <span class="icono">🎮</span>
+          <span class="icono">Inciso b</span>
           <h3>Mis actividades</h3>
           <p>Lo que hago fuera de la escuela para divertirme y seguir aprendiendo.</p>
           <a class="enlace-tarjeta" href="actividades.html">Ver mis actividades</a>
         </article>
         <article class="tarjeta amarillo">
-          <span class="icono">🤝</span>
+          <span class="icono">Inciso c</span>
           <h3>Mis amigos</h3>
           <p>Las personas con las que comparto la escuela, los juegos y muchas risas.</p>
           <a class="enlace-tarjeta" href="amigos.html">Conocer a mis amigos</a>
         </article>
         <article class="tarjeta morado">
-          <span class="icono">👥</span>
+          <span class="icono">Inciso d</span>
           <h3>Mi grupo</h3>
           <p>Quinto semestre de Programación: mis materias y lo que hemos practicado en el curso.</p>
           <a class="enlace-tarjeta" href="grupo.html">Ver mi grupo</a>
         </article>
         <article class="tarjeta rojo">
-          <span class="icono">🏠</span>
+          <span class="icono">Inciso e</span>
           <h3>Mi familia</h3>
           <p>Las personas que me apoyan todos los días y los valores que aprendí con ellas.</p>
           <a class="enlace-tarjeta" href="familia.html">Ver mi familia</a>
         </article>
         <article class="tarjeta">
-          <span class="icono">💻</span>
+          <span class="icono">HTML + CSS</span>
           <h3>Cómo está hecha</h3>
           <p>Solo HTML y CSS: tipografía en em, rejilla flexible, imágenes adaptables, media queries y menú táctil. Cambia el tamaño de la ventana y verás cómo se acomoda.</p>
         </article>
@@ -91,8 +98,26 @@
         <tr><th>Ciudad</th><td>Culiacán Rosales, Sinaloa</td></tr>
         <tr><th>Carrera técnica</th><td>Programación</td></tr>
         <tr><th>Semestre</th><td>Quinto</td></tr>
+        <tr><th>Grupo</th><td>5I</td></tr>
         <tr><th>Asignatura</th><td>Construye Aplicaciones Web</td></tr>
+        <tr><th>Intereses</th><td>Programación, química, medicina y ciencia</td></tr>
       </table>
+    </section>
+
+    <section>
+      <h2>Enlaces</h2>
+      <div class="rejilla">
+        <a class="tarjeta" href="https://portal.cbtis224.edu.mx/" target="_blank" rel="noopener">
+          <span class="icono">Escuela</span>
+          <h3>Portal CBTis 224</h3>
+          <p class="detalle">portal.cbtis224.edu.mx</p>
+        </a>
+        <a class="tarjeta" href="https://web.dev/learn/html" target="_blank" rel="noopener">
+          <span class="icono">Curso</span>
+          <h3>Curso de HTML de Google</h3>
+          <p class="detalle">Donde aprendí HTML</p>
+        </a>
+      </div>
     </section>
   </main>
 

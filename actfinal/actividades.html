@@ -5,7 +5,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <!-- Viewport: evita que el celular "miniaturice" la página -->
+  <!-- viewport: pa que el cel no haga la página chiquita -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mis actividades | Juan Carlos Camarena Pillado</title>
   <link rel="stylesheet" href="css/estilo.css">
@@ -23,7 +23,7 @@
     </div>
   </header>
 
-  <!-- Menú de navegación: botones grandes en celular, barra horizontal en pantallas grandes -->
+  <!-- nav bonito -->
   <nav class="menu">
     <ul id="menupc">
       <li><a href="index.html"><span class="titulo">Inicio</span><span class="subtitulos">Quién soy</span></a></li>
@@ -44,38 +44,120 @@
     <section>
       <h2>¿Qué hago en mi tiempo libre?</h2>
       <div class="rejilla">
-        <!-- Editar: cambia estas tarjetas por tus actividades reales -->
-        <article class="tarjeta verde">
-          <span class="icono">🎮</span>
-          <h3>Videojuegos</h3>
-          <p>Juego con mis amigos en línea y en la computadora. Me ayudan a pensar rápido, a trabajar en equipo y a relajarme.</p>
+        <article class="tarjeta rojo">
+          <span class="icono"><svg class="logo-juego valorant" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.792 2.152a.252.252 0 0 0-.098.083c-3.384 4.23-6.769 8.46-10.15 12.69-.107.093-.025.288.119.265 2.439.003 4.877 0 7.316.001a.66.66 0 0 0 .552-.25c.774-.967 1.55-1.934 2.324-2.903a.72.72 0 0 0 .144-.49c-.002-3.077 0-6.153-.003-9.23.016-.11-.1-.206-.204-.167zM.077 2.166c-.077.038-.074.132-.076.205.002 3.074.001 6.15.001 9.225a.679.679 0 0 0 .158.463l7.64 9.55c.12.152.308.25.505.247 2.455 0 4.91.003 7.365 0 .142.02.222-.174.116-.265C10.661 15.176 5.526 8.766.4 2.35c-.08-.094-.174-.272-.322-.184z"/></svg>Juego</span>
+          <h3>Valorant</h3>
+          <p>Es mi juego favorito y lo juego casi todos los días. Juego en servidores de Norteamérica, así que también practico mi inglés mientras hago equipo.</p>
         </article>
         <article class="tarjeta">
-          <span class="icono">💻</span>
+          <span class="icono">Código</span>
           <h3>Programación por mi cuenta</h3>
-          <p>Practico HTML y CSS y pruebo mis propias ideas. Cada práctica de la escuela la repito con cambios para entenderla mejor.</p>
-        </article>
-        <article class="tarjeta morado">
-          <span class="icono">🎵</span>
-          <h3>Música y series</h3>
-          <p>Escucho música mientras programo y veo series y videos sobre tecnología para conocer lo que se viene.</p>
-        </article>
-        <article class="tarjeta amarillo">
-          <span class="icono">⚽</span>
-          <h3>Deporte y convivencia</h3>
-          <p>Salgo a jugar o a caminar con mi familia y mis amigos para despejar la mente.</p>
-        </article>
-        <article class="tarjeta rojo">
-          <span class="icono">🧩</span>
-          <h3>Retos de ingenio</h3>
-          <p>Me gustan los acertijos y los retos de lógica, porque se parecen a resolver problemas de programación.</p>
+          <p>Llevo 6 años programando. Empecé con Node.js, haciendo el backend de bots para WhatsApp, Discord y Telegram, y también hago páginas con HTML, CSS y JavaScript.</p>
         </article>
         <article class="tarjeta verde">
-          <span class="icono">📚</span>
+          <span class="icono">Aprendiendo</span>
+          <h3>Aprender Python</h3>
+          <p>Estoy empezando a aprender Python con el curso CS50P. Quiero usarlo más adelante para analizar datos científicos.</p>
+        </article>
+        <article class="tarjeta morado">
+          <span class="icono">Ciencia</span>
+          <h3>Ciencia</h3>
+          <p>Me interesan la química, la medicina y la genómica: usar código para estudiar el ADN y las proteínas.</p>
+        </article>
+        <article class="tarjeta amarillo">
+          <span class="icono">Ruta</span>
+          <h3>Lo que estoy aprendiendo</h3>
+          <ul class="lista-simple">
+            <li>Python con el curso CS50P.</li>
+            <li>Matemáticas y probabilidad en Khan Academy.</li>
+            <li>Git y GitHub para subir mis proyectos.</li>
+          </ul>
+          <p>También me llama el área quant: usar matemáticas y programación para analizar los mercados financieros.</p>
+        </article>
+        <article class="tarjeta">
+          <span class="icono">Docs</span>
           <h3>Aprender cosas nuevas</h3>
-          <p>Veo tutoriales y leo documentación de páginas como MDN y W3Schools para mejorar mis proyectos.</p>
+          <p>Aprendí HTML con el curso de Google, y ahora veo tutoriales y leo documentación de páginas como MDN y W3Schools para mejorar mis proyectos.</p>
         </article>
       </div>
+    </section>
+
+    <section>
+      <h2>SEAMI · Concurso de prototipos DGETI</h2>
+      <ul class="stats">
+        <li><strong>2.º lugar</strong><span>Etapa estatal 2026</span></li>
+        <li><strong>Software</strong><span>Modalidad de prototipos</span></li>
+        <li><strong>Guasave</strong><span>Sinaloa</span></li>
+      </ul>
+      <div class="rejilla par">
+        <figure class="tarjeta foto cuadrada">
+          <img src="img/seami-premio.jpg" alt="Trofeo del segundo lugar y reconocimiento de la DGETI para el CBTis 224 por el proyecto SEAMI">
+          <figcaption>Trofeo y reconocimiento · 2.º lugar</figcaption>
+        </figure>
+        <figure class="tarjeta foto cuadrada">
+          <img src="img/seami-guasave.jpg" alt="Convivencia en Guasave durante la etapa estatal del concurso">
+          <figcaption>En Guasave · etapa estatal</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Mi perfil en Valorant</h2>
+      <ul class="stats">
+        <li><strong>Inmortal</strong><span>Mejor rango · LATAM NA</span></li>
+        <li><strong>Inglés</strong><span>Idioma en partida</span></li>
+        <li><strong><svg class="logo-juego kovaaks" viewBox="0 0 32 32" fill="#ED6816" aria-hidden="true"><path d="M29.0098 14.1485L25.3398 12.8272C25.2508 12.7941 25.1921 12.7963 25.1637 12.8338C25.1429 12.867 25.1554 12.9232 25.2011 13.0025L26.6079 15.4411C26.6537 15.5204 26.6664 15.603 26.6459 15.6888C26.6255 15.7746 26.5778 15.8392 26.5028 15.8825L24.8166 16.8568C24.7342 16.9044 24.8166 16.8568 24.5468 17.0126C24.4327 16.8147 24.4279 16.8065 24.3821 16.7272L22.0352 12.6589L20.8617 10.6248L19.6882 8.59061C19.6425 8.51131 19.6377 8.50299 19.5715 8.38839C19.5235 8.30512 19.4746 8.3316 19.7933 8.14923L21.4795 7.17493C21.5544 7.13163 21.6342 7.12258 21.7186 7.14778C21.8031 7.17298 21.8682 7.22523 21.914 7.30453L23.4924 10.0405C23.5381 10.1198 23.5806 10.1587 23.6197 10.1573C23.6542 10.1479 23.6757 10.0985 23.6841 10.0091L24.0674 5.99686C24.0757 5.90743 24.1097 5.81908 24.1693 5.73179C24.2242 5.63658 24.293 5.56515 24.3754 5.51752L26.5225 4.27692C26.6049 4.22928 26.6803 4.23862 26.7485 4.30493C26.8122 4.36332 26.8398 4.43722 26.8314 4.52665L26.1327 10.1486C26.1244 10.238 26.1453 10.3263 26.1957 10.4136C26.2489 10.4885 26.3178 10.5386 26.4023 10.5638C26.8263 10.71 27.2723 10.8594 27.74 11.0121C28.2078 11.1648 28.6741 11.3236 29.139 11.4885C29.6068 11.6412 30.0671 11.7982 30.5199 11.9595C30.9756 12.1086 31.4049 12.2465 31.8077 12.3732C31.8968 12.4063 31.9567 12.4669 31.9875 12.5548C32.0182 12.6428 31.9924 12.7106 31.9099 12.7582L29.583 14.1028C29.5005 14.1504 29.4029 14.1804 29.2901 14.1927C29.1848 14.2007 29.0914 14.1859 29.0098 14.1485Z"/><path d="M20.1242 0.549055C21.5075 0.920005 22.7988 1.46168 23.9826 2.14512L19.8212 4.54827C19.5052 4.73169 19.2112 4.95066 18.9449 5.2009L18.8831 5.18434C16.7457 4.61116 14.4864 4.68518 12.391 5.39704C10.2956 6.1089 8.45815 7.42662 7.11105 9.18358C5.76395 10.9405 4.9677 13.0578 4.82297 15.2677C4.67824 17.4775 5.19155 19.6807 6.29797 21.5986C7.40439 23.5165 9.05425 25.063 11.0389 26.0425C13.0235 27.0219 15.2538 27.3905 17.4478 27.1014C19.6417 26.8123 21.7007 25.8787 23.3644 24.4185C25.0281 22.9583 26.2218 21.0372 26.7945 18.898L26.811 18.8362C27.1571 18.7303 27.4933 18.587 27.8128 18.4011L31.9742 15.9979C31.9737 17.3657 31.7968 18.7557 31.4261 20.1401C29.1414 28.6736 20.3774 33.7375 11.8506 31.4509C3.32375 29.1644 -1.73613 20.3935 0.548625 11.8599C2.83338 3.32638 11.5974 -1.7375 20.1242 0.549055Z"/><path d="M17.4092 8.12987C17.0572 9.44475 16.6353 10.7608 16.3547 12.0931L15.2976 12.7039C14.934 12.914 14.6153 13.1938 14.3597 13.5271C14.1041 13.8605 13.9166 14.241 13.8079 14.6469C13.6992 15.0528 13.6715 15.4761 13.7263 15.8927C13.7811 16.3094 13.9174 16.7111 14.1273 17.075C14.3373 17.4389 14.6168 17.7579 14.9499 18.0137C15.283 18.2695 15.6632 18.4571 16.0688 18.5659C16.4743 18.6747 16.8973 18.7024 17.3136 18.6476C17.7299 18.5927 18.1313 18.4563 18.4949 18.2462L19.552 17.6354C20.8453 18.0584 22.1935 18.3504 23.5089 18.7031C22.9938 20.1388 22.0792 21.3971 20.873 22.3296C19.6668 23.2622 18.2192 23.8301 16.7011 23.9663C15.183 24.1025 13.6576 23.8015 12.3049 23.0986C10.9521 22.3957 9.82846 21.3203 9.06635 19.9993C8.30425 18.6782 7.93553 17.1666 8.00366 15.6427C8.0718 14.1189 8.57395 12.6463 9.4509 11.3986C10.3279 10.151 11.543 9.18033 12.9531 8.60117C14.3632 8.02201 15.9093 7.85848 17.4092 8.12987Z"/><path d="M18.2521 15.9154C17.525 15.7617 17.0941 15.0147 17.3246 14.3076C17.3246 14.3076 18.8609 11.473 19.1987 10.437C19.5366 9.40104 20.0498 9.21736 20.592 10.1573L20.9421 10.7642L21.2922 11.3711L21.9924 12.5848L22.6927 13.7986L23.3929 15.0124C24.5468 17.0126 23.2979 16.982 22.2325 16.7568L18.2521 15.9154Z"/><path d="M15.591 16.2287C15.2127 15.5729 15.4411 14.7321 16.1012 14.3506L21.3486 11.4703L22.0336 12.6577L22.7186 13.8451L17.4712 16.7254C16.8111 17.1069 15.9693 16.8844 15.591 16.2287Z"/></svg>Kovaaks</strong><span>Entreno diario</span></li>
+      </ul>
+      <p class="descripcion">Inmortal es el penúltimo de los nueve rangos del juego. Solo el 0.5% de los jugadores llegan a este rango.</p>
+      <div class="rejilla par centro">
+        <!-- eee gif en bucle y eso -->
+        <figure class="tarjeta foto cuadrada">
+          <video src="img/valorant-clip.mp4" poster="img/valorant-clip.jpg" autoplay loop muted playsinline aria-label="Clip de una ronda mía en Valorant"></video>
+          <figcaption>Un clip de mis partidas</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Mis artistas favoritos (faltan varios)</h2>
+      <ul class="artistas">
+        <li><a href="https://open.spotify.com/artist/7Gi6gjaWy3DxyilpF1a8Is" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab676161000051745fbe9b7dc7d9a2295bd6022c" alt="" loading="lazy"><span>Junior H</span></a></li>        <li><a href="https://open.spotify.com/artist/5KWQms4jSjzMC3P9cJUP9L" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174fd77a63d3b1b9487e3f737d3" alt="" loading="lazy"><span>Yeyo</span></a></li>
+        <li><a href="https://open.spotify.com/artist/4V8LLVI7PbaPR0K2TGSxFF" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174df2728294ff77dd11eeb18fb" alt="" loading="lazy"><span>Tyler, The Creator</span></a></li>
+        <li><a href="https://open.spotify.com/artist/57AnDWmqicwUdRqGXQ1I90" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab676161000051742427ab6b9cd993e6a1e1f5fd" alt="" loading="lazy"><span>requiem for you</span></a></li>
+        <li><a href="https://open.spotify.com/artist/16xTQXyj7LORVb9kupiE1y" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616d00001e0261c0d04269094ca9dfbdd91d" alt="" loading="lazy"><span>La Obsesion</span></a></li>
+        <li><a href="https://open.spotify.com/artist/2VxINnkFPw2Sd6MiyKxN4B" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab676161000051745cd698b5accf2a317d39a937" alt="" loading="lazy"><span>otuka</span></a></li>
+        <li><a href="https://open.spotify.com/artist/4aCzIdK4ystmbXSZVyVrSG" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174f8ecb51ffd078a1dcfbddd34" alt="" loading="lazy"><span>flyingfish</span></a></li>
+        <li><a href="https://open.spotify.com/artist/3Sz7ZnJQBIHsXLUSo0OQtM" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174c9aca5b6d4c528caf75e8a1d" alt="" loading="lazy"><span>Mac DeMarco</span></a></li>
+        <li><a href="https://open.spotify.com/artist/0elWFr7TW8piilVRYJUe4P" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab676161000051740d4838ef7ef6c0f889266f60" alt="" loading="lazy"><span>Natanael Cano</span></a></li>
+        <li><a href="https://open.spotify.com/artist/0XeEobZplHxzM9QzFQWLiR" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174efb9255bbd0acdcd6a32accb" alt="" loading="lazy"><span>Eslabon Armado</span></a></li>
+        <li><a href="https://open.spotify.com/artist/0XqCaSX312yAgTi1zUYFOt" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab676161000051743a3eb5eb47c21c8d428aa657" alt="" loading="lazy"><span>revivle</span></a></li>
+        <li><a href="https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174959527d2fabc9c64287e57b9" alt="" loading="lazy"><span>Radiohead</span></a></li>
+        <li><a href="https://open.spotify.com/artist/2sSGPbdZJkaSE2AbcGOACx" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174af586afa2b397f1288683a76" alt="" loading="lazy"><span>The Marías</span></a></li>
+        <li><a href="https://open.spotify.com/artist/5cpCYa1BaBS52GrkmLob1u" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174f7db1bf6fb82ec107aaa6107" alt="" loading="lazy"><span>Jades</span></a></li>
+        <li><a href="https://open.spotify.com/artist/0TvvDswOgvPbgSPK2RDf62" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab6761610000517415ff476675200f8bed35d114" alt="" loading="lazy"><span>wifiskeleton</span></a></li>
+        <li><a href="https://open.spotify.com/artist/0Y6dVaC9DZtPNH4591M42W" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174d80695211689a9c8c3fee3b0" alt="" loading="lazy"><span>TV Girl</span></a></li>
+        <li><a href="https://open.spotify.com/artist/6zhAcO3S7oi1ujlCVqpSRA" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174721739c7a958ce391ff962ff" alt="" loading="lazy"><span>The Most Exotic Flower</span></a></li>
+        <li><a href="https://open.spotify.com/artist/1Q6SZxTvaE3HhslV0iXbI6" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174bea8e9474e49de0378a8d705" alt="" loading="lazy"><span>Herencia de Patrones</span></a></li>
+        <li><a href="https://open.spotify.com/artist/7KJSk2ytUFik1LGqFGHOLW" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab676161000051744c9c81ea4a021a1776e71de4" alt="" loading="lazy"><span>Clarion</span></a></li>
+        <li><a href="https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab676161000051746e835a500e791bf9c27a422a" alt="" loading="lazy"><span>Kanye West</span></a></li>
+        <li><a href="https://open.spotify.com/artist/0U7iI0Dk4Ojvi17nZboNO4" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174ebf16e0b8ab49ecac25d0a3e" alt="" loading="lazy"><span>Vacations</span></a></li>
+        <li><a href="https://open.spotify.com/artist/2kU94AZG0xEVKnOUKDbEfg" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174f970ac79bd5cc71fc1f5a6ee" alt="" loading="lazy"><span>i wanna be a jack-o-lantern</span></a></li>
+        <li><a href="https://open.spotify.com/artist/6PH3FLQAxtqYy46Zv08bpV" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab676161000051740a052faab8058ca12cd9ff9b" alt="" loading="lazy"><span>Ivan Cornejo</span></a></li>
+        <li><a href="https://open.spotify.com/artist/2Q0rAyTIfdTUwDt8jpEpv0" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab676161000051740d1d89685e0c29b3278e4b7a" alt="" loading="lazy"><span>Novulent</span></a></li>
+        <li><a href="https://open.spotify.com/artist/6mx3Y8XNLPaS2pjJbQFq3W" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174875788a1da4dbe430683f0b1" alt="" loading="lazy"><span>bunii</span></a></li>
+        <li><a href="https://open.spotify.com/artist/6ElqtIfQsAkEYypgfJIjeK" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab676161000051747ffad2a4397c429549b19c47" alt="" loading="lazy"><span>DannyLux</span></a></li>
+        <li><a href="https://open.spotify.com/artist/5qVtAyg01uxJQzjMviHVAf" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174c3d9a7b76ad54d4673005676" alt="" loading="lazy"><span>kuraimokha</span></a></li>
+        <li><a href="https://open.spotify.com/artist/5zI4LODdVYwnKZHv4mDHRv" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab6761610000517478f9fce9d1d7ccf2c05ef1c0" alt="" loading="lazy"><span>jaydes</span></a></li>
+        <li><a href="https://open.spotify.com/artist/7eKkW1zo5uzW8kUntiiBvz" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab676161000051749f6f7c2d12975d2a4b3a0fd8" alt="" loading="lazy"><span>Malcolm Todd</span></a></li>
+        <li><a href="https://open.spotify.com/artist/4KEHIUSoWCcqrk8AddTE1O" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174714fa6e5682f730d0c82609c" alt="" loading="lazy"><span>Panchiko</span></a></li>
+        <li><a href="https://open.spotify.com/artist/4LLpKhyESsyAXpc4laK94U" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174ed3b89aa602145fde71a163a" alt="" loading="lazy"><span>Mac Miller</span></a></li>
+        <li><a href="https://open.spotify.com/artist/3WUqGdcFJJquJgCPkEzCfs" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab6761610000517494783c788ea2ffcc5193a711" alt="" loading="lazy"><span>overtonight</span></a></li>
+        <li><a href="https://open.spotify.com/artist/35WVTyRnKAoaGExqgktVyb" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab6761610000517477039980a84fb5a790a80e52" alt="" loading="lazy"><span>Hotel Ugly</span></a></li>
+        <li><a href="https://open.spotify.com/artist/54Xm6xMcgYBf0Q6jwKU3Yg" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174707b8d08d05097f50f2a95e8" alt="" loading="lazy"><span>usedcvnt</span></a></li>
+        <li><a href="https://open.spotify.com/artist/5y9Swh1G1KLBrlyM3wlNst" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab676161000051748cc13d5df67b63729f233a7a" alt="" loading="lazy"><span>duskydemise</span></a></li>
+        <li><a href="https://open.spotify.com/artist/3XxNRirzbjfLdDli06zMaB" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174b1693f731eacb1e3f294a120" alt="" loading="lazy"><span>Eyedress</span></a></li>
+        <li><a href="https://open.spotify.com/artist/18lTlQvsai2RSybawnrjGd" target="_blank" rel="noopener"><img src="https://i.scdn.co/image/ab67616100005174a2d0d5baf1447a65ef5557f0" alt="" loading="lazy"><span>jo</span></a></li>
+      </ul>
     </section>
 
     <section>
@@ -85,10 +167,10 @@
           <tr><th>Actividad</th><th>Con quién</th><th>Para qué me sirve</th></tr>
         </thead>
         <tbody>
-          <tr><td>Videojuegos</td><td>Mis amigos</td><td>Trabajar en equipo y relajarme</td></tr>
-          <tr><td>Programación</td><td>Yo solo</td><td>Practicar y entender mejor las clases</td></tr>
-          <tr><td>Música y series</td><td>Solo o en familia</td><td>Descansar la mente</td></tr>
-          <tr><td>Deporte</td><td>Familia y amigos</td><td>Moverme y convivir</td></tr>
+          <tr><td>Valorant</td><td>Mis amigos</td><td>Trabajar en equipo y practicar inglés</td></tr>
+          <tr><td>Kovaaks</td><td>Yo solo</td><td>Mejorar mi puntería</td></tr>
+          <tr><td>Programación</td><td>Amigos en línea de otros países</td><td>Crear mis propios proyectos</td></tr>
+          <tr><td>Ciencia y Python</td><td>Yo solo</td><td>Prepararme para la universidad</td></tr>
         </tbody>
       </table>
     </section>
