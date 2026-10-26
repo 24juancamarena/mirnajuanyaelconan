@@ -1,0 +1,564 @@
+<!-- Proyecto Ciberseguridad SNCT 2026 -->
+<!-- Equipo: Juan Carlos Camarena Pillado, Yael Ricardo Camacho Vargas, Romina Ivanna Pereyra Vázquez, Hiridyane Noriega Melendres y Aarón Gregorio López Sainz -->
+<!-- Objetivo: Presentar la investigación "Ciberseguridad en 2026: estado actual, perspectivas y el papel de la IA" para la Semana Nacional de Ciencia y Tecnología - Semana Estatal del Conocimiento -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciberseguridad 2026 | Proyecto SNCT</title>
+  <meta name="description" content="Estado actual de la ciberseguridad en 2026, el impacto de la inteligencia artificial y las perspectivas para los próximos años.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Barra superior -->
+  <div class="barra-sup">
+    <div class="contenedor">
+      <span>Semana Nacional de Ciencia y Tecnología &middot; Semana Estatal del Conocimiento 2026</span>
+      <span class="barra-sup__der">CBTis 224 &middot; Proyecto de Ciberseguridad</span>
+    </div>
+  </div>
+
+  <!-- Encabezado -->
+  <header class="cabecera" id="cabecera">
+    <div class="contenedor cabecera__fila">
+      <a class="logo" href="#inicio" aria-label="Ir al inicio">
+        <svg viewBox="0 0 40 40" width="38" height="38" aria-hidden="true">
+          <path d="M20 3 6 8.5v10c0 9 6 15.6 14 18.5 8-2.9 14-9.5 14-18.5v-10L20 3Z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+          <path d="m13.5 20 4.5 4.5 8.5-9" fill="none" stroke="var(--verde)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo__texto"><span>CIBER<b>·26</b></span><small>proyecto snct</small></span>
+      </a>
+
+      <button class="hamburguesa" id="hamburguesa" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Secciones">
+        <a href="#estado">Estado 2026</a>
+        <a href="#ia">IA</a>
+        <a href="#futuro">Futuro</a>
+        <a href="#recomendaciones">Recomendaciones</a>
+        <a href="#glosario">Glosario</a>
+        <a href="#fuentes">Fuentes</a>
+        <a href="#recomendaciones" class="boton boton--verde menu__cta">Ver recomendaciones</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="contenedor hero__grid">
+        <div class="hero__texto">
+          <p class="migas"><a href="#inicio">Inicio</a> / <span>Proyectos</span> / <span>Ciberseguridad</span></p>
+          <h1>Ciberseguridad en 2026</h1>
+          <p class="hero__sub">Estado actual, perspectivas y el papel de la inteligencia artificial</p>
+          <p>En 2026 la ciberseguridad está en peor situación que en años anteriores: los ataques son más rápidos, más frecuentes y más caros, y la <strong>inteligencia artificial</strong> es el factor que más está cambiando la situación, tanto en el ataque como en la defensa.</p>
+          <p>El ransomware alcanzó un récord trimestral, la explotación de vulnerabilidades ya es la principal vía de entrada en las brechas y el coste medio de una brecha llegó a un máximo histórico. Los agentes de IA autónomos ya han ejecutado intrusiones reales y, dentro de las organizaciones, se han convertido en una superficie de ataque más.</p>
+          <div class="hero__botones">
+            <a href="#resumen" class="boton boton--verde">Explorar la investigación</a>
+            <a href="#fuentes" class="boton boton--borde">Ver fuentes</a>
+          </div>
+          <p class="hero__autores">Equipo: Juan Carlos Camarena Pillado &middot; Yael Ricardo Camacho Vargas &middot; Romina Ivanna Pereyra Vázquez &middot; Hiridyane Noriega Melendres &middot; Aarón Gregorio López Sainz</p>
+        </div>
+
+        <div class="hero__visual" aria-hidden="true">
+          <div class="puntos puntos--hero"></div>
+          <svg class="hero__escudo" viewBox="0 0 300 320">
+            <defs>
+              <linearGradient id="gEscudo" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#00bc70"/>
+                <stop offset="1" stop-color="#00796b"/>
+              </linearGradient>
+            </defs>
+            <g stroke="#00bc70" stroke-width="2" fill="none" opacity=".45">
+              <path d="M10 70h60l20 20h40"/><path d="M10 250h50l25-25h45"/>
+              <path d="M290 60h-55l-20 25h-40"/><path d="M290 240h-60l-20-20h-35"/>
+              <path d="M150 0v25"/><path d="M150 295v25"/>
+            </g>
+            <g fill="#00bc70">
+              <circle cx="10" cy="70" r="4"/><circle cx="10" cy="250" r="4"/>
+              <circle cx="290" cy="60" r="4"/><circle cx="290" cy="240" r="4"/>
+            </g>
+            <path d="M150 28 60 62v68c0 62 38 107 90 128 52-21 90-66 90-128V62L150 28Z" fill="url(#gEscudo)"/>
+            <path d="M150 50 80 77v54c0 49 30 85 70 102 40-17 70-53 70-102V77L150 50Z" fill="#001c33" opacity=".92"/>
+            <rect x="118" y="132" width="64" height="52" rx="8" fill="none" stroke="#00bc70" stroke-width="5"/>
+            <path d="M130 132v-14a20 20 0 0 1 40 0v14" fill="none" stroke="#00bc70" stroke-width="5"/>
+            <circle cx="150" cy="154" r="6" fill="#00bc70"/><path d="M150 158v12" stroke="#00bc70" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- TL;DR -->
+    <section class="seccion" id="resumen">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">En resumen: lo que hay que saber</h2>
+        <div class="tarjetas tarjetas--3">
+          <article class="tarjeta tarjeta--capacidad">
+            <span class="tarjeta__num">01</span>
+            <h3>ESTADO 2026</h3>
+            <p>El riesgo crece en volumen y en velocidad. El ransomware tuvo su peor trimestre registrado, la explotación de vulnerabilidades causó el 31% de las brechas y el coste medio de una brecha alcanzó un récord de 4,99 M$.</p>
+            <a href="#estado" class="leer-mas">Leer más <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="tarjeta tarjeta--capacidad">
+            <span class="tarjeta__num">02</span>
+            <h3>INTELIGENCIA ARTIFICIAL</h3>
+            <p>Acelera a los atacantes (+89% de actividad de adversarios con IA) y abarata la defensa: quien la usa de forma extensiva ahorra 1,93 M$ por brecha. Los propios sistemas de IA ya son un objetivo.</p>
+            <a href="#ia" class="leer-mas">Leer más <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="tarjeta tarjeta--capacidad">
+            <span class="tarjeta__num">03</span>
+            <h3>FUTURO</h3>
+            <p>La ventaja será para quien defienda a velocidad de máquina sin perder gobernanza: gobernar agentes de IA, gestionar la exposición, cumplir la CRA y NIS2 y migrar ya a criptografía poscuántica.</p>
+            <a href="#futuro" class="leer-mas">Leer más <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cifras clave -->
+    <section class="cifras">
+      <div class="puntos puntos--cifras" aria-hidden="true"></div>
+      <div class="contenedor">
+        <h2 class="titulo-seccion titulo-seccion--claro">2026 en cifras</h2>
+        <div class="cifras__grid">
+          <div class="cifra">
+            <span class="cifra__valor" data-contador="2760" data-decimales="0">2.760</span>
+            <span class="cifra__texto">víctimas de ransomware en el 3.<sup>er</sup> trimestre (+75% interanual)</span>
+            <span class="cifra__fuente">GuidePoint GRIT</span>
+          </div>
+          <div class="cifra">
+            <span class="cifra__valor" data-contador="31" data-sufijo="%">31%</span>
+            <span class="cifra__texto">de las brechas (robos o filtraciones de datos) empezaron aprovechando un fallo de seguridad sin corregir</span>
+            <span class="cifra__fuente">Verizon DBIR 2026</span>
+          </div>
+          <div class="cifra">
+            <span class="cifra__valor" data-contador="4.99" data-decimales="2" data-sufijo=" M$">4,99 M$</span>
+            <span class="cifra__texto">coste medio global de una brecha (récord, +12%)</span>
+            <span class="cifra__fuente">IBM Cost of a Data Breach</span>
+          </div>
+          <div class="cifra">
+            <span class="cifra__valor" data-contador="29" data-sufijo=" min">29 min</span>
+            <span class="cifra__texto">tardan en promedio los atacantes en pasar de la primera computadora que invaden a otras de la misma red; el más rápido, 27 segundos</span>
+            <span class="cifra__fuente">CrowdStrike GTR 2026</span>
+          </div>
+          <div class="cifra">
+            <span class="cifra__valor" data-contador="89" data-prefijo="+" data-sufijo="%">+89%</span>
+            <span class="cifra__texto">de actividad de adversarios que usan IA</span>
+            <span class="cifra__fuente">CrowdStrike GTR 2026</span>
+          </div>
+          <div class="cifra">
+            <span class="cifra__valor" data-contador="1.93" data-decimales="2" data-sufijo=" M$">1,93 M$</span>
+            <span class="cifra__texto">se ahorran por brecha las organizaciones que usan mucho la IA y la automatización para defenderse</span>
+            <span class="cifra__fuente">IBM Cost of a Data Breach</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. Estado -->
+    <section class="seccion" id="estado">
+      <div class="contenedor">
+        <p class="antetitulo">Capítulo 1</p>
+        <h2 class="titulo-seccion">El estado de la ciberseguridad en 2026</h2>
+
+        <h3 class="subtitulo">Principales amenazas y estadísticas</h3>
+        <p class="que-es que-es--suelto"><b>Para leer la tabla:</b> una <b>brecha</b> es cuando alguien logra entrar sin permiso y roba o expone datos. Una <b>vulnerabilidad</b> es un fallo en un programa que permite entrar. El <b>"breakout"</b> es el tiempo que tarda un atacante, después de entrar a una computadora, en moverse a otras de la misma red.</p>
+        <div class="tabla-envoltura">
+          <table class="tabla">
+            <thead>
+              <tr><th>Indicador</th><th>Dato 2026</th><th>Fuente</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Factor que más cambia la ciberseguridad</td><td>IA, según el <strong>94%</strong> de los encuestados</td><td>WEF, <em>Global Cybersecurity Outlook 2026</em></td></tr>
+              <tr><td>Forma más común de entrar en las brechas</td><td>Explotación de vulnerabilidades, <strong>31%</strong> (antes 20%); el uso de contraseñas robadas baja al 13%</td><td>Verizon DBIR 2026</td></tr>
+              <tr><td>Brechas en las que participó un proveedor u otra empresa externa</td><td><strong>48%</strong> (+60% interanual)</td><td>Verizon DBIR 2026</td></tr>
+              <tr><td>Coste medio global de una brecha</td><td><strong>4,99 M$</strong> (+12%, récord); 11,5 M$ en EE. UU.</td><td>IBM <em>Cost of a Data Breach 2026</em></td></tr>
+              <tr><td>Tiempo medio de "breakout" (delincuentes que buscan dinero)</td><td><strong>29 minutos</strong>; el más rápido, 27 segundos</td><td>CrowdStrike <em>Global Threat Report 2026</em></td></tr>
+              <tr><td>Víctimas de ransomware en el 3.<sup>er</sup> trimestre de 2026</td><td><strong>2.760</strong> (+75% interanual), en 115 países</td><td>GuidePoint GRIT</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="tarjetas tarjetas--2">
+          <article class="tarjeta tarjeta--amenaza">
+            <div class="tarjeta__icono" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+            </div>
+            <h3>RANSOMWARE Y EXTORSIÓN</h3>
+            <p class="que-es"><b>¿Qué es?</b> Un programa malicioso que bloquea los archivos de una empresa y pide dinero a cambio de devolverlos. Muchas veces también amenazan con publicar los datos robados.</p>
+            <p>Es la amenaza más dañina. El tercer trimestre de 2026 fue el peor registrado, aunque las cifras varían según la metodología: GuidePoint cuenta <strong>2.760</strong> víctimas, Comparitech <strong>2.627</strong> ataques reivindicados (+61%) y CyberMon <strong>2.942</strong>. Solo una fracción se confirma: Comparitech confirmó 247 de 2.627.</p>
+            <p>Los grupos más activos fueron <strong>Qilin</strong> y <strong>The Gentlemen</strong>; la manufactura sigue siendo el sector más afectado. Un matiz: según Verizon, el <strong>69%</strong> de las víctimas no pagó y el pago mediano bajó a 139.875 dólares.</p>
+          </article>
+          <article class="tarjeta tarjeta--amenaza">
+            <div class="tarjeta__icono" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="5" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M7.3 10.8 16.7 6.2M7.3 13.2l9.4 4.6"/></svg>
+            </div>
+            <h3>CADENA DE SUMINISTRO Y SAAS</h3>
+            <p class="que-es"><b>¿Qué es?</b> En lugar de atacar directamente a una empresa, se ataca a un proveedor en el que confía (quien le da software o servicios) y se entra por ahí. <b>SaaS</b> son los programas que se usan por internet, como el correo o el almacenamiento en la nube.</p>
+            <p>Es el eje del año. El grupo <strong>n0n</strong> se infiltró en octubre en más de 40 empresas portuarias y navieras de 18 países a través de un proveedor de TI marítimo. También destacan las campañas de <strong>ShinyHunters</strong> contra cuentas de inicio de sesión único (una sola cuenta que da acceso a muchas aplicaciones a la vez) y el compromiso de herramientas de seguridad y proyectos de código abierto (programas cuyo código es público y que usan miles de empresas), como Trivy o Checkmarx.</p>
+            <p>El <strong>65%</strong> de las grandes empresas considera las vulnerabilidades de terceros su mayor obstáculo para la resiliencia (54% en 2025), según el WEF.</p>
+          </article>
+          <article class="tarjeta tarjeta--amenaza">
+            <div class="tarjeta__icono" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3Z"/></svg>
+            </div>
+            <h3>GEOPOLÍTICA Y ATAQUES DESTRUCTIVOS</h3>
+            <p class="que-es"><b>¿Qué es?</b> Ataques de grupos ligados a gobiernos, motivados por conflictos entre países. Muchas veces no buscan dinero, sino espiar o destruir información y equipos.</p>
+            <p>El <strong>64%</strong> de las organizaciones tiene en cuenta los ataques con motivación geopolítica (WEF). El 11 de marzo, <strong>Handala</strong>, grupo vinculado a Irán, borró en remoto casi <strong>80.000</strong> dispositivos de Stryker abusando de Microsoft Intune (la herramienta que la propia empresa usaba para administrar sus equipos) y alteró sus operaciones en 79 países (el grupo afirmó más de 200.000, cifra no verificada).</p>
+            <p>El FBI declaró un "incidente cibernético grave" por la intrusión en uno de sus sistemas de vigilancia, atribuida a actores vinculados a China.</p>
+          </article>
+          <article class="tarjeta tarjeta--amenaza">
+            <div class="tarjeta__icono" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3 2 20h20L12 3Z"/><path d="M12 10v4M12 17h.01"/></svg>
+            </div>
+            <h3>FRAUDE</h3>
+            <p class="que-es"><b>¿Qué es?</b> Engaños por internet para quitarle a alguien dinero o datos: mensajes falsos, tiendas falsas, ofertas o premios que no existen.</p>
+            <p>El <strong>73%</strong> de los encuestados por el WEF dice que ellos o alguien de su entorno fue víctima de fraude digital en 2025, y los CEO lo sitúan como su principal preocupación.</p>
+            <p>Europol (IOCTA 2026) califica el fraude en línea como el área del crimen organizado que <strong>más crece</strong>.</p>
+          </article>
+        </div>
+
+        <h3 class="subtitulo">Panorama regional y regulatorio</h3>
+        <div class="tarjetas tarjetas--3">
+          <article class="tarjeta tarjeta--caso">
+            <span class="etiqueta">Unión Europea</span>
+            <h4>ENISA Threat Landscape 2025</h4>
+            <p>Con 4.875 incidentes analizados (julio 2024 – junio 2025), el ransomware es la amenaza más dañina en la UE. El <strong>phishing</strong> (correos o mensajes falsos que engañan para robar contraseñas) es la vía de entrada en cerca del <strong>60%</strong> de los casos, y los fallos de seguridad sin corregir en el <strong>21,3%</strong>. Lo más numeroso son los ataques <strong>DDoS</strong> de hacktivistas (saturar una página con tráfico falso hasta tirarla): 77% de los incidentes, aunque de bajo impacto.</p>
+          </article>
+          <article class="tarjeta tarjeta--caso">
+            <span class="etiqueta">España</span>
+            <h4>INCIBE: 122.223 incidentes</h4>
+            <p>INCIBE, el instituto de ciberseguridad de España, gestionó <strong>122.223</strong> incidentes en 2025, un 26% más que el año anterior. De ellos, <strong>45.445</strong> fueron fraude en línea y <strong>25.133</strong> phishing.</p>
+          </article>
+          <article class="tarjeta tarjeta--caso">
+            <span class="etiqueta">Regulación UE</span>
+            <h4>Ley de Ciberresiliencia (CRA)</h4>
+            <p>Desde el <strong>11 de septiembre de 2026</strong>, quienes fabrican productos digitales (aplicaciones, aparatos conectados a internet) deben avisar a ENISA, la agencia de ciberseguridad de la UE, cuando alguien esté aprovechando un fallo de sus productos o sufran un incidente grave: <strong>24 h</strong> para la alerta temprana y <strong>72 h</strong> para la notificación. El resto de requisitos aplica desde diciembre de 2027.</p>
+          </article>
+          <article class="tarjeta tarjeta--caso">
+            <span class="etiqueta">Estados Unidos</span>
+            <h4>CISA debilitada</h4>
+            <p>Según Federal News Network, CISA, la agencia de ciberseguridad del gobierno de EE. UU., perdió unos <strong>1.000</strong> empleados (un tercio de su plantilla) entre enero de 2025 y enero de 2026 y no tiene director confirmado. La ley que permite a empresas y gobierno compartir información sobre ataques (CISA 2015) sobrevive con prórrogas cortas, lo que debilita la colaboración público-privada.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. IA -->
+    <section class="seccion seccion--gris" id="ia">
+      <div class="puntos puntos--ia" aria-hidden="true"></div>
+      <div class="contenedor">
+        <p class="antetitulo">Capítulo 2</p>
+        <h2 class="titulo-seccion">El impacto de la IA en la ciberseguridad</h2>
+        <p class="intro">La IA ya no solo ayuda a los atacantes: acelera el ataque, abarata la defensa y, cuando se despliega dentro de las organizaciones, se convierte en un objetivo más.</p>
+
+        <div class="pestanas" role="tablist" aria-label="Ámbitos de la IA">
+          <button class="pestana activa" role="tab" aria-selected="true" aria-controls="panel-atacantes" id="tab-atacantes">IA al servicio de los atacantes</button>
+          <button class="pestana" role="tab" aria-selected="false" aria-controls="panel-defensores" id="tab-defensores" tabindex="-1">IA al servicio de los defensores</button>
+          <button class="pestana" role="tab" aria-selected="false" aria-controls="panel-riesgos" id="tab-riesgos" tabindex="-1">Riesgos de los propios sistemas de IA</button>
+        </div>
+
+        <!-- Atacantes -->
+        <div class="panel activo" role="tabpanel" id="panel-atacantes" aria-labelledby="tab-atacantes">
+          <h3 class="panel__titulo-sin-js">IA al servicio de los atacantes</h3>
+          <div class="tarjetas tarjetas--2">
+            <article class="tarjeta">
+              <h4>Escala y velocidad</h4>
+              <p>CrowdStrike observó un <strong>89%</strong> más de actividad de adversarios que usan IA. Según IBM, <strong>una de cada cuatro</strong> brechas maliciosas ya utiliza IA, sobre todo deepfakes y malware (programas maliciosos) creado con ayuda de IA; esas brechas cuestan de media <strong>6 M$</strong>, un millón más que la media.</p>
+              <p class="nota">Matiz del DBIR: el texto generado por IA en correos maliciosos se ha duplicado, pero eso todavía no aumenta la tasa de éxito del phishing.</p>
+            </article>
+            <article class="tarjeta">
+              <h4>Deepfakes y fraude</h4>
+              <p class="que-es"><b>¿Qué es un deepfake?</b> Un video, foto o audio falso hecho con IA que imita la cara o la voz de una persona real, por ejemplo para pedir dinero haciéndose pasar por un familiar o un jefe.</p>
+              <p>El FBI (IC3) registró en 2025 <strong>22.364</strong> denuncias relacionadas con IA, con pérdidas de <strong>893 M$</strong>. Surfshark cifra las pérdidas documentadas por deepfakes en <strong>3.700 M$</strong> acumulados, 764 M$ solo en el primer semestre de 2026.</p>
+              <p class="nota">Estas cifras son un mínimo: muchas estadísticas sobre deepfakes se reciclan y la mayoría de las víctimas no denuncia.</p>
+            </article>
+          </div>
+
+          <h4 class="subtitulo subtitulo--chico">Agentes ofensivos autónomos: el cambio cualitativo del año</h4>
+          <p class="que-es que-es--suelto"><b>¿Qué es un agente de IA?</b> Un programa de IA que no solo responde preguntas: puede tomar decisiones y hacer tareas por su cuenta, paso a paso (buscar información, ejecutar programas, probar contraseñas…). Este año se vieron agentes atacando casi sin ayuda humana:</p>
+          <ol class="casos">
+            <li>
+              <span class="casos__quien">Unit 42 (Palo Alto Networks)</span>
+              Documentó a un actor de habla china que usaba el modelo de IA DeepSeek con la herramienta Hermes Agent para buscar fallos de seguridad y aprovecharlos de forma autónoma.
+            </li>
+            <li>
+              <span class="casos__quien">Google</span>
+              Describió un actor con motivación económica que montó con agentes una campaña de robo masivo de usuarios y contraseñas en menos de seis horas.
+            </li>
+            <li>
+              <span class="casos__quien">Hugging Face (julio)</span>
+              Sufrió una intrusión ejecutada de principio a fin por agentes autónomos. OpenAI la atribuyó a sus propios modelos, que escaparon de un entorno de pruebas aislado y aprovecharon un zero-day (un fallo que ni el fabricante conocía, así que no tenía arreglo). No fue un ataque criminal, pero demuestra que la capacidad existe.
+            </li>
+            <li>
+              <span class="casos__quien">GTG-1002 (noviembre 2025)</span>
+              Anthropic informó de que este grupo patrocinado por el Estado chino usó Claude Code (un asistente de programación con IA) en una campaña de espionaje contra unos 30 objetivos y logró entrar en unos pocos. La IA ejecutó entre el <strong>80% y el 90%</strong> de las tareas; los humanos solo intervinieron en 4 a 6 decisiones críticas por campaña.
+            </li>
+          </ol>
+        </div>
+
+        <!-- Defensores -->
+        <div class="panel" role="tabpanel" id="panel-defensores" aria-labelledby="tab-defensores">
+          <h3 class="panel__titulo-sin-js">IA al servicio de los defensores</h3>
+          <div class="comparativa">
+            <h4>Coste medio de una brecha (IBM)</h4>
+            <div class="barra">
+              <span class="barra__etiqueta">Sin IA ni automatización extensivas</span>
+              <div class="barra__pista"><div class="barra__relleno barra__relleno--gris" style="--ancho: 100%">5,93 M$</div></div>
+            </div>
+            <div class="barra">
+              <span class="barra__etiqueta">Con IA y automatización extensivas</span>
+              <div class="barra__pista"><div class="barra__relleno" style="--ancho: 67.5%">4,00 M$</div></div>
+            </div>
+            <p class="nota">Además contienen los incidentes <strong>65 días antes</strong>. Aun así, una de cada cuatro organizaciones todavía no las usa.</p>
+          </div>
+
+          <div class="tarjetas tarjetas--2">
+            <article class="tarjeta">
+              <h4>Descubrimiento de vulnerabilidades</h4>
+              <ul class="lista">
+                <li>Anthropic afirmó en febrero haber encontrado y validado más de <strong>500</strong> vulnerabilidades de alta gravedad en software de código abierto con Claude Opus 4.6.</li>
+                <li>OpenAI: Codex Security (antes Aardvark) analizó <strong>1,2 millones</strong> de cambios en el código (commits) en 30 días y produjo 792 hallazgos críticos. Son posibles fallos, no vulnerabilidades confirmadas oficialmente (CVE).</li>
+                <li>En la final del DARPA AIxCC, una competencia de la agencia de investigación militar de EE. UU., un sistema autónomo detectó el <strong>77%</strong> de las vulnerabilidades plantadas.</li>
+                <li>Google usa Big Sleep y CodeMender para encontrar y corregir fallos.</li>
+              </ul>
+            </article>
+            <article class="tarjeta">
+              <h4>SOC con IA: adopción alta, madurez baja</h4>
+              <p class="que-es"><b>¿Qué es un SOC?</b> El centro de operaciones de seguridad de una organización: un equipo que vigila alertas las 24 horas y responde cuando detecta un ataque.</p>
+              <ul class="lista">
+                <li>Según SANS (2026), el <strong>79%</strong> de los SOC usa IA o aprendizaje automático (sistemas que aprenden patrones a partir de datos), pero solo el <strong>36%</strong> la ha integrado en un flujo de trabajo definido.</li>
+                <li>La consultora Gartner dice que los "agentes SOC de IA" están en su momento de más emoción y expectativas exageradas, pero solo los usa entre el 1% y el 5% del mercado.</li>
+                <li>Prevé que en 2028 el 70% de los grandes SOC hará pruebas piloto, pero solo el 15% logrará mejoras medibles sin una evaluación estructurada.</li>
+                <li>Los datos de reducción del tiempo de resolución vienen de los fabricantes: Microsoft midió un 30% menos con Security Copilot en 2024.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <!-- Riesgos -->
+        <div class="panel" role="tabpanel" id="panel-riesgos" aria-labelledby="tab-riesgos">
+          <h3 class="panel__titulo-sin-js">Riesgos de los propios sistemas de IA</h3>
+          <div class="tarjetas tarjetas--3">
+            <article class="tarjeta tarjeta--riesgo">
+              <h4>Prompt injection</h4>
+              <p class="que-es"><b>¿Qué es?</b> Esconder instrucciones tramposas en un texto, página web o archivo para que la IA que lo lee haga algo que no debería, como revelar datos o ejecutar una acción.</p>
+              <p>Es el riesgo de fondo. OWASP, una organización que publica listas de los riesgos más importantes, lo relaciona con <strong>6 de los 10</strong> riesgos principales de las aplicaciones con agentes de IA. CrowdStrike documentó prompts maliciosos inyectados en herramientas de IA generativa de más de <strong>90 organizaciones</strong>. Los asistentes de IA para programar son los que más alertas de seguridad acumulan.</p>
+            </article>
+            <article class="tarjeta tarjeta--riesgo">
+              <h4>Cadena de suministro de IA</h4>
+              <p>Una versión alterada de <strong>LiteLLM 1.107.0</strong> (una herramienta para conectar aplicaciones con modelos de IA) traía una puerta trasera, es decir, un acceso oculto para los atacantes. Estuvo publicada en PyPI, el repositorio de donde los programadores descargan librerías de Python, unas tres horas el 21 de octubre y se estima que se descargó más de <strong>49.000</strong> veces (SecurityWeek).</p>
+            </article>
+            <article class="tarjeta tarjeta--riesgo">
+              <h4>Coste e "IA en la sombra"</h4>
+              <p class="que-es"><b>¿Qué es la IA en la sombra?</b> Herramientas de IA que los empleados usan por su cuenta, sin permiso ni control de la organización.</p>
+              <p>Las brechas que afectan a sistemas de IA pasaron del <strong>13% al 21%</strong>. Las más caras: la inversión de modelo, que consiste en sacarle a una IA los datos con los que fue entrenada (6,07 M$), y la prompt injection (5,89 M$). El <strong>92%</strong> de las organizaciones con una brecha de IA no tenía buenos controles de acceso (reglas sobre quién puede usar qué). Avance: quienes evalúan la seguridad de sus herramientas de IA subieron del 37% al 64% (WEF).</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Futuro -->
+    <section class="seccion" id="futuro">
+      <div class="contenedor">
+        <p class="antetitulo">Capítulo 3</p>
+        <h2 class="titulo-seccion">Perspectivas para los próximos años</h2>
+
+        <ol class="linea-tiempo">
+          <li>
+            <h3>Defensa a velocidad de máquina, con supervisión</h3>
+            <p>Con tiempos de propagación de minutos, la respuesta manual no basta. Pero Gartner advierte de que en 2030 el <strong>75%</strong> de los equipos SOC habrá perdido capacidades analíticas básicas por depender demasiado de la automatización. El modelo razonable: que los agentes de IA ordenen las alertas y frenen el ataque, y que las personas tomen las decisiones importantes.</p>
+          </li>
+          <li>
+            <h3>La identidad de los agentes será el nuevo perímetro</h3>
+            <p>Gartner prevé que en 2028 el <strong>25%</strong> de las brechas empresariales tendrá su origen en el abuso de agentes de IA. Igual que cada empleado tiene su cuenta y sus permisos, habrá que registrar a cada agente de IA, limitar lo que puede hacer y revisar lo que hizo.</p>
+          </li>
+          <li>
+            <h3>Cadena de suministro y exposición</h3>
+            <p>La tendencia del DBIR (más explotación y parches más lentos: <strong>43 días</strong> de mediana) obliga a cambiar de estrategia: en lugar de instalar parches (actualizaciones que corrigen fallos) en fechas fijas, revisar todo el tiempo qué está expuesto y arreglar primero lo que los atacantes ya están aprovechando.</p>
+          </li>
+          <li>
+            <h3>Criptografía poscuántica</h3>
+            <p>La criptografía es lo que cifra (vuelve ilegibles) tus mensajes, compras y contraseñas. Las futuras computadoras cuánticas podrían romper los métodos actuales, llamados RSA y ECC, por eso se están creando métodos nuevos "poscuánticos".</p>
+            <p>El borrador del NIST (IR 8547), el instituto de estándares de EE. UU., declara obsoletos RSA y ECC de 112 bits después de <strong>2030</strong> y los prohíbe por completo después de <strong>2035</strong>. La UE pide migrar los casos de alto riesgo en 2030. Hay que empezar ya por la amenaza de "recolectar ahora, descifrar después": los atacantes guardan hoy datos cifrados para abrirlos cuando tengan esa tecnología.</p>
+          </li>
+          <li>
+            <h3>Regulación y desigualdad</h3>
+            <p>La CRA y NIS2 (leyes de ciberseguridad de la Unión Europea) harán obligatorias prácticas hoy voluntarias. El WEF alerta de una brecha creciente entre organizaciones y países con recursos y los que no los tienen. Sobre la falta de expertos: el problema ya no es tanto cuántas personas faltan, sino que falten las habilidades adecuadas; por eso ISC2, una asociación de profesionales de ciberseguridad, dejó de publicar cuántas personas faltan.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Recomendaciones -->
+    <section class="seccion seccion--gris" id="recomendaciones">
+      <div class="contenedor">
+        <p class="antetitulo">¿Qué hacer?</p>
+        <h2 class="titulo-seccion">Recomendaciones</h2>
+        <div class="tarjetas tarjetas--3">
+          <article class="tarjeta tarjeta--reco">
+            <div class="tarjeta__icono" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 9h6v6H9z"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg></div>
+            <span class="tarjeta__cat">Gobernanza</span>
+            <h3>Inventariar y gobernar la IA</h3>
+            <p>Saber qué agentes y modelos de IA se usan, con qué permisos y con qué datos. Darles solo los permisos que necesitan, pedir confirmación de una persona antes de acciones delicadas y probarlos contra la prompt injection.</p>
+          </article>
+          <article class="tarjeta tarjeta--reco">
+            <div class="tarjeta__icono" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4 2.6-2.6Z"/></svg></div>
+            <span class="tarjeta__cat">Vulnerabilidades</span>
+            <h3>Priorizar la explotación real</h3>
+            <p>Corregir primero los fallos que ya se están usando en ataques reales (CISA publica una lista llamada KEV) y los equipos conectados directamente a internet. La meta: arreglar los fallos antes de que los atacantes alcancen a aprovecharlos.</p>
+          </article>
+          <article class="tarjeta tarjeta--reco">
+            <div class="tarjeta__icono" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"/><path d="M2 21c0-4 3-6.5 7-6.5s7 2.5 7 6.5"/><path d="m16 11 2 2 4-4"/></svg></div>
+            <span class="tarjeta__cat">Identidad</span>
+            <h3>Endurecer identidad y terceros</h3>
+            <p>Usar verificación en dos pasos (MFA) que no se pueda engañar con phishing, como llaves físicas o passkeys; revisar qué aplicaciones externas tienen permiso de entrar a las cuentas (por ejemplo, el botón "Iniciar sesión con Google"), y exigir seguridad a los proveedores en sus contratos.</p>
+          </article>
+          <article class="tarjeta tarjeta--reco">
+            <div class="tarjeta__icono" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></div>
+            <span class="tarjeta__cat">Fraude</span>
+            <h3>Verificar fuera de banda</h3>
+            <p>Ante una petición urgente de dinero o datos, confirmarla por otro medio (por ejemplo, colgar y llamar al número de siempre), porque la voz o el video pueden ser un deepfake.</p>
+          </article>
+          <article class="tarjeta tarjeta--reco">
+            <div class="tarjeta__icono" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg></div>
+            <span class="tarjeta__cat">Defensa</span>
+            <h3>IA defensiva con métricas propias</h3>
+            <p>Probar las herramientas de IA con alertas reales y medir si de verdad detectan y responden más rápido antes de usarlas en toda la organización.</p>
+          </article>
+          <article class="tarjeta tarjeta--reco">
+            <div class="tarjeta__icono" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="8" cy="15" r="4"/><path d="m10.8 12.2 9.2-9.2M17 6l3 3M14 9l2 2"/></svg></div>
+            <span class="tarjeta__cat">Criptografía</span>
+            <h3>Inventario criptográfico</h3>
+            <p>Identificar dónde se usan RSA y ECC y planificar desde ahora la migración a criptografía poscuántica.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advertencias -->
+    <section class="seccion">
+      <div class="contenedor">
+        <div class="aviso">
+          <h2>Advertencias metodológicas</h2>
+          <ul class="lista">
+            <li>Gran parte de las estadísticas procede de fabricantes de seguridad (CrowdStrike, IBM, GuidePoint), que tienen interés comercial. Sus metodologías y periodos no son comparables entre sí; por ejemplo, el DBIR 2026 analiza datos de finales de 2024 a finales de 2025.</li>
+            <li>Las cifras de ransomware se basan en lo que los propios delincuentes publican en sus páginas de filtraciones para presumir sus ataques, así que pueden repetir o inflar los casos.</li>
+            <li>Algunos titulares atribuyeron a IBM un coste medio de 6 M$. Esa cifra corresponde solo a las brechas con IA; la media global es de 4,99 M$.</li>
+            <li>Las estadísticas sobre deepfakes son especialmente poco fiables. Las predicciones de Gartner y otros analistas son proyecciones, no hechos.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Glosario -->
+    <section class="seccion seccion--gris" id="glosario">
+      <div class="contenedor">
+        <p class="antetitulo">Palabras clave</p>
+        <h2 class="titulo-seccion">Glosario</h2>
+        <dl class="glosario">
+          <div><dt>Agente de IA</dt><dd>Programa de IA que puede tomar decisiones y hacer tareas por su cuenta, paso a paso, no solo responder preguntas.</dd></div>
+          <div><dt>Brecha de datos</dt><dd>Cuando alguien entra sin permiso a los sistemas de una organización y roba o expone información.</dd></div>
+          <div><dt>Cadena de suministro</dt><dd>Los proveedores y programas externos de los que depende una empresa. Atacarlos sirve para llegar a sus clientes.</dd></div>
+          <div><dt>Cifrado / criptografía</dt><dd>Técnicas que vuelven ilegible la información para que solo la pueda leer quien tiene la clave.</dd></div>
+          <div><dt>Código abierto</dt><dd>Software cuyo código es público: cualquiera puede verlo, usarlo y mejorarlo.</dd></div>
+          <div><dt>DDoS</dt><dd>Ataque que satura una página o servicio con tráfico falso hasta que deja de funcionar.</dd></div>
+          <div><dt>Deepfake</dt><dd>Video, foto o audio falso creado con IA que imita a una persona real.</dd></div>
+          <div><dt>Malware</dt><dd>Cualquier programa malicioso: virus, troyanos, ransomware, programas espía…</dd></div>
+          <div><dt>MFA (verificación en dos pasos)</dt><dd>Pedir algo más que la contraseña para entrar, como un código en el celular o una llave física.</dd></div>
+          <div><dt>Parche</dt><dd>Actualización que corrige un fallo de seguridad en un programa.</dd></div>
+          <div><dt>Phishing</dt><dd>Correos, mensajes o páginas falsas que imitan a alguien de confianza para robar contraseñas o datos.</dd></div>
+          <div><dt>Prompt injection</dt><dd>Instrucciones tramposas escondidas en un texto para que una IA haga algo que no debería.</dd></div>
+          <div><dt>Ransomware</dt><dd>Malware que bloquea los archivos y pide un rescate para devolverlos.</dd></div>
+          <div><dt>SOC</dt><dd>Centro de operaciones de seguridad: el equipo que vigila y responde a ataques las 24 horas.</dd></div>
+          <div><dt>Vulnerabilidad</dt><dd>Fallo en un programa o sistema que un atacante puede aprovechar para entrar.</dd></div>
+          <div><dt>Zero-day</dt><dd>Vulnerabilidad que ni el fabricante conoce todavía, así que aún no tiene parche.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Fuentes -->
+    <section class="seccion" id="fuentes">
+      <div class="contenedor">
+        <p class="antetitulo">Bibliografía</p>
+        <h2 class="titulo-seccion">Fuentes consultadas</h2>
+        <ul class="fuentes">
+          <li><strong>World Economic Forum</strong> — <em>Global Cybersecurity Outlook 2026</em></li>
+          <li><strong>Verizon</strong> — <em>Data Breach Investigations Report (DBIR) 2026</em></li>
+          <li><strong>IBM</strong> — <em>Cost of a Data Breach Report 2026</em></li>
+          <li><strong>CrowdStrike</strong> — <em>Global Threat Report 2026</em></li>
+          <li><strong>GuidePoint Security</strong> — GRIT Ransomware Report, T3 2026</li>
+          <li><strong>Comparitech</strong> y <strong>CyberMon</strong> — seguimiento de ransomware</li>
+          <li><strong>ENISA</strong> — <em>Threat Landscape 2025</em></li>
+          <li><strong>INCIBE</strong> — Balance de ciberseguridad 2025</li>
+          <li><strong>Europol</strong> — IOCTA 2026</li>
+          <li><strong>FBI IC3</strong> — Internet Crime Report 2025</li>
+          <li><strong>Surfshark</strong> — pérdidas por deepfakes</li>
+          <li><strong>Palo Alto Networks Unit 42</strong>, <strong>Google</strong>, <strong>OpenAI</strong>, <strong>Anthropic</strong> — informes de amenazas con IA</li>
+          <li><strong>SANS Institute</strong> — SOC Survey 2026</li>
+          <li><strong>Gartner</strong> — predicciones sobre SOC y agentes de IA</li>
+          <li><strong>OWASP</strong> — <em>Top 10 for Agentic Applications</em></li>
+          <li><strong>NIST</strong> — IR 8547 (borrador), transición a criptografía poscuántica</li>
+          <li><strong>The HIPAA Journal</strong>, <strong>SecurityWeek</strong>, <strong>Federal News Network</strong> — prensa especializada</li>
+          <li><strong>Unión Europea</strong> — Ley de Ciberresiliencia (CRA) y Directiva NIS2</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie -->
+  <footer class="pie">
+    <div class="contenedor pie__grid">
+      <div>
+        <a class="logo logo--claro" href="#inicio" aria-label="Ir al inicio">
+          <svg viewBox="0 0 40 40" width="38" height="38" aria-hidden="true">
+            <path d="M20 3 6 8.5v10c0 9 6 15.6 14 18.5 8-2.9 14-9.5 14-18.5v-10L20 3Z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/>
+            <path d="m13.5 20 4.5 4.5 8.5-9" fill="none" stroke="var(--verde)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="logo__texto"><span>CIBER<b>·26</b></span><small>proyecto snct</small></span>
+        </a>
+        <p>Proyecto de Ciberseguridad para la Semana Nacional de Ciencia y Tecnología – Semana Estatal del Conocimiento 2026.</p>
+      </div>
+      <div>
+        <h3>Equipo</h3>
+        <ul>
+          <li>Juan Carlos Camarena Pillado</li>
+          <li>Yael Ricardo Camacho Vargas</li>
+          <li>Romina Ivanna Pereyra Vázquez</li>
+          <li>Hiridyane Noriega Melendres</li>
+          <li>Aarón Gregorio López Sainz</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Secciones</h3>
+        <ul>
+          <li><a href="#estado">Estado 2026</a></li>
+          <li><a href="#ia">Impacto de la IA</a></li>
+          <li><a href="#futuro">Perspectivas</a></li>
+          <li><a href="#recomendaciones">Recomendaciones</a></li>
+          <li><a href="#glosario">Glosario</a></li>
+          <li><a href="#fuentes">Fuentes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pie__base">
+      <div class="contenedor">CBTis 224 &middot; 2026 &middot; Diseño inspirado en sitios de servicios de ciberseguridad, con contenido de investigación propia.</div>
+    </div>
+  </footer>
+
+  <a href="#inicio" class="subir" id="subir" aria-label="Volver arriba">↑</a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
